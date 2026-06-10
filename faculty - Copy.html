@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        td:first-child {
+            font-weight: bold;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Faculty Details</h1>
+
+<div id="details"></div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+
+fetch('faculty.json')
+    .then(response => response.json())
+    .then(data => {
+
+        const faculty = data[id];
+
+        let html = "<table>";
+
+        for (let key in faculty) {
+            html += `
+                <tr>
+                    <td>${key}</td>
+                    <td>${faculty[key]}</td>
+                </tr>
+            `;
+        }
+
+        html += "</table>";
+
+        document.getElementById('details').innerHTML = html;
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .toolbar input,
+        .toolbar select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .toolbar input {
+            flex: 1;
+        }
+
+        .faculty-card {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            border-left: 5px solid #2c3e50;
+            transition: all 0.2s ease;
+        }
+
+        .faculty-card:hover {
+            background: #e8e8e8;
+            transform: translateX(5px);
+        }
+
+        .faculty-card h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .faculty-card p {
+            margin: 0;
+            color: #555;
+        }
+
+        .pdf-label {
+            margin-top: 8px;
+            color: #d9534f;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>List of Faculties</h1>
+
+    <div class="toolbar">
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="Search faculty by name..."
+        >
+
+        <select id="sortOrder">
+            <option value="asc">Ascending (A-Z)</option>
+            <option value="desc">Descending (Z-A)</option>
+        </select>
+    </div>
+
+    <div id="facultyList">Loading...</div>
+
+    <script>
+
+        const facultyList = document.getElementById("facultyList");
+        const sortOrder = document.getElementById("sortOrder");
+        const searchBox = document.getElementById("searchBox");
+
+        let allFaculty = [];
+
+        function createFacultyCard(name, designation, clickHandler, isPdf = false) {
+
+            const card = document.createElement("div");
+            card.className = "faculty-card";
+
+            card.innerHTML = `
+                <h3>${name}</h3>
+                <p>${designation || ""}</p>
+                ${isPdf ? '<div class="pdf-label">PDF Profile</div>' : ''}
+            `;
+
+            card.addEventListener("click", clickHandler);
+
+            facultyList.appendChild(card);
+        }
+
+        function renderFacultyList() {
+
+            facultyList.innerHTML = "";
+
+            let filteredFaculty = [...allFaculty];
+
+            const searchText = searchBox.value.trim().toLowerCase();
+
+            /* Search Filter */
+            if (searchText !== "") {
+                filteredFaculty = filteredFaculty.filter(faculty =>
+                    faculty.Name.toLowerCase().includes(searchText)
+                );
+            }
+
+            /* Sorting */
+            filteredFaculty.sort((a, b) => {
+
+                const nameA = a.Name.toUpperCase();
+                const nameB = b.Name.toUpperCase();
+
+                if (sortOrder.value === "asc") {
+                    return nameA.localeCompare(nameB);
+                } else {
+                    return nameB.localeCompare(nameA);
+                }
+
+            });
+
+            /* No Results */
+            if (filteredFaculty.length === 0) {
+                facultyList.innerHTML = `
+                    <div class="no-results">
+                        No faculty found.
+                    </div>
+                `;
+                return;
+            }
+
+            /* Display Cards */
+            filteredFaculty.forEach(faculty => {
+
+                createFacultyCard(
+                    faculty.Name,
+                    faculty.Designation,
+                    faculty.clickHandler,
+                    faculty.isPdf
+                );
+
+            });
+        }
+
+        Promise.all([
+            fetch("faculty.json").then(res => res.json()),
+            fetch("pdf_faculty.json").then(res => res.json())
+        ])
+        .then(([facultyData, pdfFacultyData]) => {
+
+            allFaculty = [];
+
+            /* Normal Faculty Profiles */
+            facultyData.forEach((faculty, index) => {
+
+                allFaculty.push({
+                    Name: faculty.Name,
+                    Designation: faculty.Designation,
+                    isPdf: false,
+                    clickHandler: () => {
+                        window.location.href = `faculty.html?id=${index}`;
+                    }
+                });
+
+            });
+
+            /* PDF Faculty Profiles */
+            pdfFacultyData.forEach((faculty) => {
+
+                allFaculty.push({
+                    Name: faculty.Name,
+                    Designation: faculty.Designation,
+                    isPdf: true,
+                    clickHandler: () => {
+                        window.open(faculty.pdf, "_blank");
+                    }
+                });
+
+            });
+
+            renderFacultyList();
+
+        })
+        .catch(error => {
+
+            console.error("Error loading faculty data:", error);
+
+            facultyList.innerHTML = `
+                <div class="no-results" style="color:red;">
+                    Unable to load faculty data.
+                </div>
+            `;
+        });
+
+        /* Event Listeners */
+        sortOrder.addEventListener("change", renderFacultyList);
+        searchBox.addEventListener("input", renderFacultyList);
+
+    </script>
+
+</body>
+</html>
