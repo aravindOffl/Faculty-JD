@@ -11,6 +11,45 @@
             margin: auto;
         }
 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #2c3e50;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .user-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .username-display {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .logout-btn {
+            padding: 8px 15px;
+            background: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .logout-btn:hover {
+            background: #c9302c;
+        }
+
         h1 {
             margin-bottom: 20px;
         }
@@ -74,7 +113,13 @@
 </head>
 <body>
 
-    <h1>List of Faculties</h1>
+    <div class="header">
+        <h1>List of Faculties</h1>
+        <div class="user-section">
+            <span class="username-display">User: <strong id="displayUsername"></strong></span>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
 
     <div class="toolbar">
         <input
@@ -82,6 +127,12 @@
             id="searchBox"
             placeholder="Search faculty by name..."
         >
+
+        <select id="departmentFilter">
+            <option value="">All Departments</option>
+            <option value="General">General</option>
+            <option value="COE">COE</option>
+        </select>
 
         <select id="sortOrder">
             <option value="asc">Ascending (A-Z)</option>
@@ -93,9 +144,43 @@
 
     <script>
 
+        // ===== AUTHENTICATION CHECK =====
+        function checkAuthentication() {
+            if (!sessionStorage.getItem("isAuthenticated")) {
+                // Redirect to login page if not authenticated
+                window.location.href = "auth.html";
+                return false;
+            }
+            return true;
+        }
+
+        // Check authentication on page load
+        if (!checkAuthentication()) {
+            throw new Error("Redirecting to authentication page...");
+        }
+
+        // Display username
+        const username = sessionStorage.getItem("username");
+        document.getElementById("displayUsername").textContent = username || "User";
+
+        // Logout functionality
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            // Clear session storage
+            sessionStorage.removeItem("isAuthenticated");
+            sessionStorage.removeItem("username");
+            
+            // Redirect to login page
+            window.location.href = "auth.html";
+        });
+
+        // (Change password feature removed)
+
+        // ===== FACULTY LIST CODE =====
+
         const facultyList = document.getElementById("facultyList");
         const sortOrder = document.getElementById("sortOrder");
         const searchBox = document.getElementById("searchBox");
+        const departmentFilter = document.getElementById("departmentFilter");
 
         let allFaculty = [];
 
@@ -127,6 +212,14 @@
             if (searchText !== "") {
                 filteredFaculty = filteredFaculty.filter(faculty =>
                     faculty.Name.toLowerCase().includes(searchText)
+                );
+            }
+
+            /* Department Filter */
+            const selectedDepartment = departmentFilter.value;
+            if (selectedDepartment !== "") {
+                filteredFaculty = filteredFaculty.filter(faculty =>
+                    faculty.Department === selectedDepartment
                 );
             }
 
@@ -181,6 +274,7 @@
                 allFaculty.push({
                     Name: faculty.Name,
                     Designation: faculty.Designation,
+                    Department: faculty.Department || "General",
                     isPdf: false,
                     clickHandler: () => {
                         window.location.href = `faculty.html?id=${index}`;
@@ -195,6 +289,7 @@
                 allFaculty.push({
                     Name: faculty.Name,
                     Designation: faculty.Designation,
+                    Department: faculty.Department || "General",
                     isPdf: true,
                     clickHandler: () => {
                         window.open(faculty.pdf, "_blank");
@@ -220,6 +315,7 @@
         /* Event Listeners */
         sortOrder.addEventListener("change", renderFacultyList);
         searchBox.addEventListener("input", renderFacultyList);
+        departmentFilter.addEventListener("change", renderFacultyList);
 
     </script>
 
