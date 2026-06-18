@@ -334,7 +334,7 @@
             /* Search Filter */
             if (searchText !== "") {
                 filteredFaculty = filteredFaculty.filter(faculty =>
-                    faculty.Name.toLowerCase().includes(searchText)
+                    faculty.DisplayName.toLowerCase().includes(searchText)
                 );
             }
 
@@ -351,8 +351,8 @@
             /* Sorting */
             filteredFaculty.sort((a, b) => {
 
-                const nameA = a.Name.toUpperCase();
-                const nameB = b.Name.toUpperCase();
+                const nameA = a.DisplayName.toUpperCase();
+                const nameB = b.DisplayName.toUpperCase();
 
                 if (sortOrder.value === "asc") {
                     return nameA.localeCompare(nameB);
@@ -376,7 +376,7 @@
             filteredFaculty.forEach(faculty => {
 
                 createFacultyCard(
-                    faculty.Name,
+                    faculty.DisplayName,
                     faculty.Designation,
                     faculty.clickHandler,
                     faculty.isPdf
@@ -400,12 +400,15 @@
                 departmentsSet.add(mainDept);
 
                 allFaculty.push({
+                    DisplayName: faculty["Name of the faculty"] || faculty.Name,
                     Name: faculty.Name,
                     Designation: faculty.Designation,
                     Department: faculty.Department,
                     MainDepartment: mainDept,
                     isPdf: false,
                     clickHandler: () => {
+                        // Save selected department before navigating
+                        sessionStorage.setItem('selectedDepartment', departmentFilter.value);
                         window.location.href = `faculty.html?id=${index}`;
                     }
                 });
@@ -417,6 +420,7 @@
                 departmentsSet.add(mainDept);
 
                 allFaculty.push({
+                    DisplayName: faculty["Name of the faculty"] || faculty.Name,
                     Name: faculty.Name,
                     Designation: faculty.Designation,
                     Department: faculty.Department,
@@ -438,6 +442,13 @@
                 departmentFilter.appendChild(option);
             });
 
+            // Restore selected department from sessionStorage
+            const savedDepartment = sessionStorage.getItem('selectedDepartment');
+            if (savedDepartment) {
+                departmentFilter.value = savedDepartment;
+                sessionStorage.removeItem('selectedDepartment');
+            }
+
             renderFacultyList();
 
         })
@@ -455,7 +466,11 @@
         /* Event Listeners */
         sortOrder.addEventListener("change", renderFacultyList);
         searchBox.addEventListener("input", renderFacultyList);
-        departmentFilter.addEventListener("change", renderFacultyList);
+        departmentFilter.addEventListener("change", function() {
+            // Save selected department when it changes
+            sessionStorage.setItem('lastSelectedDepartment', this.value);
+            renderFacultyList();
+        });
 
     </script>
 
