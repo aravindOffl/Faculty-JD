@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty List</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
             max-width: 1000px;
             margin: auto;
+            background-color: #fafafa;
         }
 
         .header {
@@ -18,6 +27,8 @@
             margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 2px solid #2c3e50;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .header h1 {
@@ -58,6 +69,7 @@
             display: flex;
             gap: 10px;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .toolbar input,
@@ -66,10 +78,16 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
+            min-height: 44px;
         }
 
         .toolbar input {
             flex: 1;
+            min-width: 200px;
+        }
+
+        .toolbar select {
+            min-width: 140px;
         }
 
         .faculty-card {
@@ -108,6 +126,111 @@
             color: #666;
             margin-top: 20px;
             font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+                width: 100%;
+            }
+
+            .user-section {
+                width: 100%;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .username-display {
+                font-size: 12px;
+            }
+
+            .logout-btn {
+                padding: 10px 15px;
+                font-size: 13px;
+                min-height: 44px;
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+
+            .toolbar {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .toolbar input {
+                min-width: 100%;
+                width: 100%;
+            }
+
+            .toolbar select {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .faculty-card {
+                padding: 12px;
+                margin: 8px 0;
+                font-size: 14px;
+            }
+
+            .faculty-card h3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .faculty-card p {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header h1 {
+                width: 100%;
+                font-size: 24px;
+            }
+
+            .user-section {
+                width: 100%;
+            }
+
+            .toolbar {
+                flex-direction: column;
+            }
+
+            .toolbar input,
+            .toolbar select {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .header {
+                flex-wrap: nowrap;
+            }
         }
     </style>
 </head>
