@@ -341,9 +341,11 @@
             /* Department Filter */
             const selectedDepartment = departmentFilter.value;
             if (selectedDepartment !== "") {
-                filteredFaculty = filteredFaculty.filter(faculty =>
-                    faculty.Department === selectedDepartment
-                );
+                filteredFaculty = filteredFaculty.filter(faculty => {
+                    // Extract main department (e.g., "S&H" from "S&H (Chemistry)")
+                    const mainDept = faculty.Department.split(' (')[0];
+                    return mainDept === selectedDepartment;
+                });
             }
 
             /* Sorting */
@@ -390,35 +392,50 @@
         .then(([facultyData, pdfFacultyData]) => {
 
             allFaculty = [];
+            const departmentsSet = new Set();
 
             /* Normal Faculty Profiles */
             facultyData.forEach((faculty, index) => {
+                const mainDept = faculty.Department.split(' (')[0];
+                departmentsSet.add(mainDept);
 
                 allFaculty.push({
                     Name: faculty.Name,
                     Designation: faculty.Designation,
-                    Department: faculty.Department || "General",
+                    Department: faculty.Department,
+                    MainDepartment: mainDept,
                     isPdf: false,
                     clickHandler: () => {
                         window.location.href = `faculty.html?id=${index}`;
                     }
                 });
-
             });
 
             /* PDF Faculty Profiles */
             pdfFacultyData.forEach((faculty) => {
+                const mainDept = faculty.Department.split(' (')[0];
+                departmentsSet.add(mainDept);
 
                 allFaculty.push({
                     Name: faculty.Name,
                     Designation: faculty.Designation,
-                    Department: faculty.Department || "General",
+                    Department: faculty.Department,
+                    MainDepartment: mainDept,
                     isPdf: true,
                     clickHandler: () => {
                         window.open(faculty.pdf, "_blank");
                     }
                 });
+            });
 
+            // Populate department dropdown with unique departments
+            const departmentFilter = document.getElementById("departmentFilter");
+            const uniqueDepts = Array.from(departmentsSet).sort();
+            uniqueDepts.forEach(dept => {
+                const option = document.createElement("option");
+                option.value = dept;
+                option.textContent = dept;
+                departmentFilter.appendChild(option);
             });
 
             renderFacultyList();
