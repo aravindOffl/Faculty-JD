@@ -342,9 +342,13 @@
             const selectedDepartment = departmentFilter.value;
             if (selectedDepartment !== "") {
                 filteredFaculty = filteredFaculty.filter(faculty => {
-                    // Extract main department (e.g., "S&H" from "S&H (Chemistry)")
-                    const mainDept = faculty.Department.split(' (')[0];
-                    return mainDept === selectedDepartment;
+                    // For S&H, match main department only
+                    if (selectedDepartment === "S&H") {
+                        const mainDept = faculty.Department.split(' (')[0];
+                        return mainDept === "S&H";
+                    }
+                    // For other departments (including CSE variants), match full department
+                    return faculty.Department === selectedDepartment;
                 });
             }
 
@@ -397,7 +401,13 @@
             /* Normal Faculty Profiles */
             facultyData.forEach((faculty, index) => {
                 const mainDept = faculty.Department.split(' (')[0];
-                departmentsSet.add(mainDept);
+                // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
+                // For S&H, we'll handle it specially in the dropdown
+                if (mainDept === "S&H") {
+                    departmentsSet.add("S&H");
+                } else {
+                    departmentsSet.add(faculty.Department);
+                }
 
                 allFaculty.push({
                     DisplayName: faculty["Name of the faculty"] || faculty.Name,
@@ -417,7 +427,13 @@
             /* PDF Faculty Profiles */
             pdfFacultyData.forEach((faculty) => {
                 const mainDept = faculty.Department.split(' (')[0];
-                departmentsSet.add(mainDept);
+                // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
+                // For S&H, we'll handle it specially in the dropdown
+                if (mainDept === "S&H") {
+                    departmentsSet.add("S&H");
+                } else {
+                    departmentsSet.add(faculty.Department);
+                }
 
                 allFaculty.push({
                     DisplayName: faculty["Name of the faculty"] || faculty.Name,
