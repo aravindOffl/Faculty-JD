@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -232,12 +233,65 @@
                 flex-wrap: nowrap;
             }
         }
+
+        .dept-container {
+            margin-bottom: 20px;
+        }
+
+        .dept-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .dept-btn {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            border: 1.5px solid #2c3e50;
+            padding: 12px 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+        }
+
+        .dept-btn:hover {
+            background-color: #e2e6ea;
+            transform: translateY(-1px);
+        }
+
+        .dept-btn.active {
+            background-color: #2c3e50;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments for department buttons */
+        @media (max-width: 768px) {
+            .dept-buttons-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dept-buttons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <div class="header">
-        <h1>List of Faculties</h1>
+        <h1>Job Description</h1>
         <div class="user-section">
             <span class="username-display">User: <strong id="displayUsername"></strong></span>
             <button class="logout-btn" id="logoutBtn">Logout</button>
@@ -245,22 +299,16 @@
     </div>
 
     <div class="toolbar">
-        <input
-            type="text"
-            id="searchBox"
-            placeholder="Search faculty by name..."
-        >
-
-        <select id="departmentFilter">
-            <option value="">All Departments</option>
-            <option value="General">General</option>
-            <option value="COE">COE</option>
-        </select>
+        <input type="text" id="searchBox" placeholder="Search faculty by name...">
 
         <select id="sortOrder">
             <option value="asc">Ascending (A-Z)</option>
             <option value="desc">Descending (Z-A)</option>
         </select>
+    </div>
+
+    <div class="dept-container">
+        <div id="departmentButtons" class="dept-buttons-grid"></div>
     </div>
 
     <div id="facultyList">Loading...</div>
@@ -287,11 +335,11 @@
         document.getElementById("displayUsername").textContent = username || "User";
 
         // Logout functionality
-        document.getElementById("logoutBtn").addEventListener("click", function() {
+        document.getElementById("logoutBtn").addEventListener("click", function () {
             // Clear session storage
             sessionStorage.removeItem("isAuthenticated");
             sessionStorage.removeItem("username");
-            
+
             // Redirect to login page
             window.location.href = "auth.html";
         });
@@ -303,9 +351,9 @@
         const facultyList = document.getElementById("facultyList");
         const sortOrder = document.getElementById("sortOrder");
         const searchBox = document.getElementById("searchBox");
-        const departmentFilter = document.getElementById("departmentFilter");
 
         let allFaculty = [];
+        let activeDepartment = "";
 
         function createFacultyCard(name, designation, clickHandler, isPdf = false) {
 
@@ -339,7 +387,7 @@
             }
 
             /* Department Filter */
-            const selectedDepartment = departmentFilter.value;
+            const selectedDepartment = activeDepartment;
             if (selectedDepartment !== "") {
                 filteredFaculty = filteredFaculty.filter(faculty => {
                     // For S&H, match main department only
@@ -393,102 +441,137 @@
             fetch("faculty.json").then(res => res.json()),
             fetch("pdf_faculty.json").then(res => res.json())
         ])
-        .then(([facultyData, pdfFacultyData]) => {
+            .then(([facultyData, pdfFacultyData]) => {
 
-            allFaculty = [];
-            const departmentsSet = new Set();
+                allFaculty = [];
+                const departmentsSet = new Set();
 
-            /* Normal Faculty Profiles */
-            facultyData.forEach((faculty, index) => {
-                const mainDept = faculty.Department.split(' (')[0];
-                // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
-                // For S&H, we'll handle it specially in the dropdown
-                if (mainDept === "S&H") {
-                    departmentsSet.add("S&H");
-                } else {
-                    departmentsSet.add(faculty.Department);
+                /* Normal Faculty Profiles */
+                facultyData.forEach((faculty, index) => {
+                    const mainDept = faculty.Department.split(' (')[0];
+                    // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
+                    // For S&H, we'll handle it specially in the dropdown
+                    if (mainDept === "S&H") {
+                        departmentsSet.add("S&H");
+                    } else {
+                        departmentsSet.add(faculty.Department);
+                    }
+
+                    allFaculty.push({
+                        DisplayName: faculty["Name of the faculty"] || faculty.Name,
+                        Name: faculty.Name,
+                        Designation: faculty.Designation,
+                        Department: faculty.Department,
+                        MainDepartment: mainDept,
+                        isPdf: false,
+                        clickHandler: () => {
+                            // Save selected department before navigating
+                            sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            window.location.href = `faculty.html?id=${index}`;
+                        }
+                    });
+                });
+
+                /* PDF Faculty Profiles */
+                pdfFacultyData.forEach((faculty) => {
+                    const mainDept = faculty.Department.split(' (')[0];
+                    // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
+                    // For S&H, we'll handle it specially in the dropdown
+                    if (mainDept === "S&H") {
+                        departmentsSet.add("S&H");
+                    } else {
+                        departmentsSet.add(faculty.Department);
+                    }
+
+                    allFaculty.push({
+                        DisplayName: faculty["Name of the faculty"] || faculty.Name,
+                        Name: faculty.Name,
+                        Designation: faculty.Designation,
+                        Department: faculty.Department,
+                        MainDepartment: mainDept,
+                        isPdf: true,
+                        clickHandler: () => {
+                            window.open(faculty.pdf, "_blank");
+                        }
+                    });
+                });
+
+                // Populate department buttons
+                const departmentButtonsContainer = document.getElementById("departmentButtons");
+                const uniqueDepts = Array.from(departmentsSet).sort();
+
+                function updateDepartmentButtons() {
+                    departmentButtonsContainer.innerHTML = "";
+
+                    // "All Departments" button
+                    const allBtn = document.createElement("button");
+                    allBtn.type = "button";
+                    allBtn.className = "dept-btn" + (activeDepartment === "" ? " active" : "");
+                    allBtn.textContent = "All Departments";
+                    allBtn.addEventListener("click", () => {
+                        setActiveDepartment("");
+                    });
+                    departmentButtonsContainer.appendChild(allBtn);
+
+                    uniqueDepts.forEach(dept => {
+                        const btn = document.createElement("button");
+                        btn.type = "button";
+                        btn.className = "dept-btn" + (activeDepartment === dept ? " active" : "");
+                        btn.textContent = dept;
+                        btn.addEventListener("click", () => {
+                            setActiveDepartment(dept);
+                        });
+                        departmentButtonsContainer.appendChild(btn);
+                    });
                 }
 
-                allFaculty.push({
-                    DisplayName: faculty["Name of the faculty"] || faculty.Name,
-                    Name: faculty.Name,
-                    Designation: faculty.Designation,
-                    Department: faculty.Department,
-                    MainDepartment: mainDept,
-                    isPdf: false,
-                    clickHandler: () => {
-                        // Save selected department before navigating
-                        sessionStorage.setItem('selectedDepartment', departmentFilter.value);
-                        window.location.href = `faculty.html?id=${index}`;
-                    }
-                });
-            });
-
-            /* PDF Faculty Profiles */
-            pdfFacultyData.forEach((faculty) => {
-                const mainDept = faculty.Department.split(' (')[0];
-                // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
-                // For S&H, we'll handle it specially in the dropdown
-                if (mainDept === "S&H") {
-                    departmentsSet.add("S&H");
-                } else {
-                    departmentsSet.add(faculty.Department);
+                // Restore selected department from sessionStorage
+                const savedDepartment = sessionStorage.getItem('selectedDepartment');
+                if (savedDepartment) {
+                    activeDepartment = savedDepartment;
+                    sessionStorage.removeItem('selectedDepartment');
                 }
 
-                allFaculty.push({
-                    DisplayName: faculty["Name of the faculty"] || faculty.Name,
-                    Name: faculty.Name,
-                    Designation: faculty.Designation,
-                    Department: faculty.Department,
-                    MainDepartment: mainDept,
-                    isPdf: true,
-                    clickHandler: () => {
-                        window.open(faculty.pdf, "_blank");
-                    }
-                });
-            });
+                updateDepartmentButtons();
 
-            // Populate department dropdown with unique departments
-            const departmentFilter = document.getElementById("departmentFilter");
-            const uniqueDepts = Array.from(departmentsSet).sort();
-            uniqueDepts.forEach(dept => {
-                const option = document.createElement("option");
-                option.value = dept;
-                option.textContent = dept;
-                departmentFilter.appendChild(option);
-            });
+                renderFacultyList();
 
-            // Restore selected department from sessionStorage
-            const savedDepartment = sessionStorage.getItem('selectedDepartment');
-            if (savedDepartment) {
-                departmentFilter.value = savedDepartment;
-                sessionStorage.removeItem('selectedDepartment');
-            }
+            })
+            .catch(error => {
 
-            renderFacultyList();
+                console.error("Error loading faculty data:", error);
 
-        })
-        .catch(error => {
-
-            console.error("Error loading faculty data:", error);
-
-            facultyList.innerHTML = `
+                facultyList.innerHTML = `
                 <div class="no-results" style="color:red;">
                     Unable to load faculty data.
                 </div>
             `;
-        });
+            });
 
         /* Event Listeners */
         sortOrder.addEventListener("change", renderFacultyList);
         searchBox.addEventListener("input", renderFacultyList);
-        departmentFilter.addEventListener("change", function() {
-            // Save selected department when it changes
-            sessionStorage.setItem('lastSelectedDepartment', this.value);
+
+        function setActiveDepartment(dept) {
+            activeDepartment = dept;
+            sessionStorage.setItem('lastSelectedDepartment', dept);
+
+            // Update active styling
+            const buttons = document.querySelectorAll(".dept-btn");
+            buttons.forEach(btn => {
+                const isAllBtn = btn.textContent === "All Departments";
+                if ((isAllBtn && dept === "") || (!isAllBtn && btn.textContent === dept)) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+
             renderFacultyList();
-        });
+        }
 
     </script>
 
 </body>
+
 </html>
