@@ -22,7 +22,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "2",
-    "Exceptional Initiatives": "Organizing workshops, seminars, or guest lectures."
+    "Exceptional Initiatives": "Organizing workshops, seminars, or guest lectures.",
+    "Teaching Hours per week": "27",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "LOKESH KIRAN P",
@@ -47,7 +51,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "4",
-    "Exceptional Initiatives": "Placement support "
+    "Exceptional Initiatives": "Placement support ",
+    "Teaching Hours per week": "21.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "3.25"
   },
   {
     "Name": "Shabarish N",
@@ -72,7 +80,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "14",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "21",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Dr. Kalaiselvan S",
@@ -97,7 +109,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "3",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "11",
-    "Exceptional Initiatives": "Students paper publications and conference presentation international level (abroad)"
+    "Exceptional Initiatives": "Students paper publications and conference presentation international level (abroad)",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Jeevananthan V",
@@ -122,7 +138,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Implementation of new teaching methodology "
+    "Exceptional Initiatives": "Implementation of new teaching methodology ",
+    "Teaching Hours per week": "6",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "15"
   },
   {
     "Name": "Dr. Ananthi J",
@@ -147,14 +167,18 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Global certification and corporate technical skill enhancement tools"
+    "Exceptional Initiatives": "Global certification and corporate technical skill enhancement tools",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Dr Selva Pandian D",
     "Email": "selvapandian.soc@rathinam.in",
     "Name of the faculty": "Dr. D. Selvapandian",
     "Designation": "Associate Professor ",
-    "Job Title": "HOD",
+    "Job Title": "Head of the Department",
     "DOJ": "8/11/25",
     "Qualification": "Ph D",
     "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "1 year",
@@ -172,7 +196,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Admission"
+    "Exceptional Initiatives": "Admission",
+    "Teaching Hours per week": "25.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Karthika R",
@@ -197,7 +225,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Address for bottleneck problems and To learn Trend course "
+    "Exceptional Initiatives": "Address for bottleneck problems and To learn Trend course ",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Dr. Sujatha S",
@@ -222,14 +254,18 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "2",
-    "Exceptional Initiatives": "Applying for two ANRF-ARG research projects, submitted a review paper in the field of porphyrin-based systems, and submitted a proposal for organising a national seminar/workshop."
+    "Exceptional Initiatives": "Applying for two ANRF-ARG research projects, submitted a review paper in the field of porphyrin-based systems, and submitted a proposal for organising a national seminar/workshop.",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
-    "Name": "rtchod .cyber",
+    "Name": "Dr.M.Amutha",
     "Email": "rtchod.cyber@rathinam.in",
     "Name of the faculty": "Dr.M.Amutha",
     "Designation": "Professor",
-    "Job Title": "HoD",
+    "Job Title": "Head of the Department",
     "DOJ": "6/24/24",
     "Qualification": "BE .,M.Tech,PhD",
     "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "1 Yr 12",
@@ -247,7 +283,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "3",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "MOU signing,FDP organizing, faculty research and grant"
+    "Exceptional Initiatives": "MOU signing,FDP organizing, faculty research and grant",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Dr. Senpagam S",
@@ -272,7 +312,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "3",
-    "Exceptional Initiatives": "0"
+    "Exceptional Initiatives": "0",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Dr. Siva Ranjini J",
@@ -297,7 +341,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "3",
-    "Exceptional Initiatives": "Submit the Paper in the Scopus Journal and Project proposal "
+    "Exceptional Initiatives": "Submit the Paper in the Scopus Journal and Project proposal ",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Dr. Kowsalya G",
@@ -322,7 +370,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "3",
     "No.of KPI submissions in 26-27 (target)": "9",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Vijayasekaran G",
@@ -347,7 +399,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Establish new MoUs with leading industries, R&D organizations, and startups.\r\nStrengthen collaborations with professional bodies such as SAE International, IEEE, ISTE, and IEI.\r\nOrganize industry-sponsored workshops, technical training programs, and certification courses.\r\nFacilitate internships, industrial visits, and live industry projects through MoU partners.\r\nConduct expert lectures and technical sessions by industry professionals.\r\nEnhance campus placements through dedicated recruitment drives from MoU companies.\r\nDevelop industry-specific skill enhancement and pre-placement training programs.\r\nIncrease student enrollment in SAE membership and strengthen the SAE student chapter.\r\nEncourage participation in SAE competitions, design challenges, and technical events.\r\nConduct SAE-based workshops on electric vehicles, sustainable mobility, CAD/CAE, and automotive technologies.\r\nEstablish an Industry Consultancy and Collaborative Research Cell.\r\nInitiate consultancy projects for local industries, MSMEs, and startups utilizing faculty expertise.\r\nPromote industry-funded projects, product development, testing, and technical problem-solving activities.\r\nEncourage faculty and student participation in collaborative research and innovation projects.\r\nGenerate revenue through consultancy, training, and industry-sponsored activities.\r\nFoster entrepreneurship, innovation, and patent-oriented project development.\r\nStrengthen industry-academia partnerships to improve employability and practical learning opportunities.\r\nCreate a sustainable ecosystem for professional development, research, consultancy, and placement enhancement."
+    "Exceptional Initiatives": "Establish new MoUs with leading industries, R&D organizations, and startups.\r\nStrengthen collaborations with professional bodies such as SAE International, IEEE, ISTE, and IEI.\r\nOrganize industry-sponsored workshops, technical training programs, and certification courses.\r\nFacilitate internships, industrial visits, and live industry projects through MoU partners.\r\nConduct expert lectures and technical sessions by industry professionals.\r\nEnhance campus placements through dedicated recruitment drives from MoU companies.\r\nDevelop industry-specific skill enhancement and pre-placement training programs.\r\nIncrease student enrollment in SAE membership and strengthen the SAE student chapter.\r\nEncourage participation in SAE competitions, design challenges, and technical events.\r\nConduct SAE-based workshops on electric vehicles, sustainable mobility, CAD/CAE, and automotive technologies.\r\nEstablish an Industry Consultancy and Collaborative Research Cell.\r\nInitiate consultancy projects for local industries, MSMEs, and startups utilizing faculty expertise.\r\nPromote industry-funded projects, product development, testing, and technical problem-solving activities.\r\nEncourage faculty and student participation in collaborative research and innovation projects.\r\nGenerate revenue through consultancy, training, and industry-sponsored activities.\r\nFoster entrepreneurship, innovation, and patent-oriented project development.\r\nStrengthen industry-academia partnerships to improve employability and practical learning opportunities.\r\nCreate a sustainable ecosystem for professional development, research, consultancy, and placement enhancement.",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Janaki G",
@@ -372,7 +428,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "Research work"
+    "Exceptional Initiatives": "Research work",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Sathish kumar R",
@@ -397,7 +457,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Research work "
+    "Exceptional Initiatives": "Research work ",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Karthigai Priya M",
@@ -422,7 +486,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "5",
     "No.of Project Proposals submission in 26-27 (target)": "5",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "Implementing new ideas in Teaching, Applying proposals, publishing papers"
+    "Exceptional Initiatives": "Implementing new ideas in Teaching, Applying proposals, publishing papers",
+    "Teaching Hours per week": "12",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "8"
   },
   {
     "Name": "Sivaprakash P",
@@ -447,7 +515,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "4",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Hackathon Coordinator, CAT Project Presentation Coordinator"
+    "Exceptional Initiatives": "Hackathon Coordinator, CAT Project Presentation Coordinator",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Dr. Karpagam V",
@@ -472,7 +544,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "Praparing project proposal"
+    "Exceptional Initiatives": "Praparing project proposal",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "30",
+    "Hours for Self Development": "12"
   },
   {
     "Name": "Dr. Vinesh vijayan",
@@ -497,7 +573,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "3",
     "No.of KPI submissions in 26-27 (target)": "11",
-    "Exceptional Initiatives": "Improving physics teaching materials and research"
+    "Exceptional Initiatives": "Improving physics teaching materials and research",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Suriyaprakash L",
@@ -522,7 +602,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "1.Robot Training planned\r\n2. AI Assistant Teaching\r\n3.Upcoming 2 year Students Paper publication"
+    "Exceptional Initiatives": "1.Robot Training planned\r\n2. AI Assistant Teaching\r\n3.Upcoming 2 year Students Paper publication",
+    "Teaching Hours per week": "13.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Sundareswari K",
@@ -547,7 +631,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "I am interested in providing girl student improvements"
+    "Exceptional Initiatives": "I am interested in providing girl student improvements",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Mangayarkarasi G",
@@ -572,7 +660,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "As a C29 Tutor, I plan to encourage and mentor students to actively participate in Smart India Hackathon (SIH), research conferences, BIRAC schemes, and NPTEL certification courses, with a focus on improving student participation, certification completion, and overall pass percentage."
+    "Exceptional Initiatives": "As a C29 Tutor, I plan to encourage and mentor students to actively participate in Smart India Hackathon (SIH), research conferences, BIRAC schemes, and NPTEL certification courses, with a focus on improving student participation, certification completion, and overall pass percentage.",
+    "Teaching Hours per week": "6",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "10"
   },
   {
     "Name": "Raja N",
@@ -597,7 +689,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "2",
-    "Exceptional Initiatives": "NIL"
+    "Exceptional Initiatives": "NIL",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "21"
   },
   {
     "Name": "Dr. Shenbagavalli P",
@@ -622,7 +718,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "0"
+    "Exceptional Initiatives": "0",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "7.5"
   },
   {
     "Name": "Prakash R",
@@ -647,7 +747,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "Last year Made 3 admission to Rathinam, this year made 5 admission to RGU & RTC, RGF 2026 Accounts. "
+    "Exceptional Initiatives": "Last year Made 3 admission to Rathinam, this year made 5 admission to RGU & RTC, RGF 2026 Accounts. ",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Avinash K",
@@ -672,7 +776,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "As a Tutor and Mentor for the C28 batch, I have actively guided students in their academic progression, career development, and enhancement of core domain knowledge. Through continuous mentoring, students were encouraged to pursue self-learning certifications from various online platforms, thereby strengthening their technical competencies and employability skills. As a CAT Programme Faculty, I have significantly contributed to fostering a research-oriented mindset among students, resulting in the successful execution of innovative and impactful projects. I also coordinated and organized several workshops, seminars, and guest lectures to expose students to emerging trends and advancements in their respective fields. Furthermore, focused efforts were undertaken to improve student participation and performance in NPTEL courses, leading to a notable increase in successful certifications compared to the previous academic year. These initiatives have contributed to the overall academic and professional development of students, and I remain committed to further enhancing student outcomes and supporting the growth and excellence of the institution in the forthcoming academic years."
+    "Exceptional Initiatives": "As a Tutor and Mentor for the C28 batch, I have actively guided students in their academic progression, career development, and enhancement of core domain knowledge. Through continuous mentoring, students were encouraged to pursue self-learning certifications from various online platforms, thereby strengthening their technical competencies and employability skills. As a CAT Programme Faculty, I have significantly contributed to fostering a research-oriented mindset among students, resulting in the successful execution of innovative and impactful projects. I also coordinated and organized several workshops, seminars, and guest lectures to expose students to emerging trends and advancements in their respective fields. Furthermore, focused efforts were undertaken to improve student participation and performance in NPTEL courses, leading to a notable increase in successful certifications compared to the previous academic year. These initiatives have contributed to the overall academic and professional development of students, and I remain committed to further enhancing student outcomes and supporting the growth and excellence of the institution in the forthcoming academic years.",
+    "Teaching Hours per week": "6",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "10"
   },
   {
     "Name": "Dr KUMAR J",
@@ -697,7 +805,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "5",
     "No.of Project Proposals submission in 26-27 (target)": "10",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "1. Bulding a research and innovation ecosystem \r\n2. High-quality publications\r\n3. Research Proposals \r\n4. Technology transfer of patents"
+    "Exceptional Initiatives": "1. Bulding a research and innovation ecosystem \r\n2. High-quality publications\r\n3. Research Proposals \r\n4. Technology transfer of patents",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "25",
+    "Hours for Self Development": "17"
   },
   {
     "Name": "Sathyapriya A",
@@ -722,7 +834,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "NBA accreditation process, with successful completion targeted by the next academic year. Encouraged a strong research and innovation ecosystem by increasing the number of student projects, publications, and participation in hackathons and technical competitions. Additionally, mentored faculty members in developing and submitting research proposals to various funding agencies, thereby strengthening the department’s research capabilities and external collaborations."
+    "Exceptional Initiatives": "NBA accreditation process, with successful completion targeted by the next academic year. Encouraged a strong research and innovation ecosystem by increasing the number of student projects, publications, and participation in hackathons and technical competitions. Additionally, mentored faculty members in developing and submitting research proposals to various funding agencies, thereby strengthening the department’s research capabilities and external collaborations.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Sujitha K",
@@ -747,7 +863,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "4",
     "No.of Project Proposals submission in 26-27 (target)": "4",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "IMPLEMENTING NEW METHODOLOGY IN TEACHING, PUBLISHING MORE NO. OF PAPERS. PATENTS, PROPOSAL AND RESPONSIBILITIES."
+    "Exceptional Initiatives": "IMPLEMENTING NEW METHODOLOGY IN TEACHING, PUBLISHING MORE NO. OF PAPERS. PATENTS, PROPOSAL AND RESPONSIBILITIES.",
+    "Teaching Hours per week": "12",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "8"
   },
   {
     "Name": "Rishothi Y S",
@@ -772,7 +892,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "-"
+    "Exceptional Initiatives": "-",
+    "Teaching Hours per week": "18.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Raajananthini K",
@@ -797,7 +921,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Introduced approval process for students leave and On Duty through QR in department level."
+    "Exceptional Initiatives": "Introduced approval process for students leave and On Duty through QR in department level.",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "35",
+    "Hours for Self Development": "7"
   },
   {
     "Name": "Vaidevi S",
@@ -822,7 +950,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "7",
     "No.of Project Proposals submission in 26-27 (target)": "10",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Research grants, Product development and technology transfer, patent filing, scheme proposal "
+    "Exceptional Initiatives": "Research grants, Product development and technology transfer, patent filing, scheme proposal ",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "22"
   },
   {
     "Name": "Vetrivale K M",
@@ -847,7 +979,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "5",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "21.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Sathish P",
@@ -872,7 +1008,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "1.Patent published based on Ph.D. research work.\r\n2.Incorporating real life applications and case studies into lessons.\r\n3.Encouraging students to develop patents, research projects, and innovative ideas.\r\n4.Using PowerPoint presentations, animations, and videos to explain chemistry concepts."
+    "Exceptional Initiatives": "1.Patent published based on Ph.D. research work.\r\n2.Incorporating real life applications and case studies into lessons.\r\n3.Encouraging students to develop patents, research projects, and innovative ideas.\r\n4.Using PowerPoint presentations, animations, and videos to explain chemistry concepts.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Dr Anbarasan. R",
@@ -897,7 +1037,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Academic: Starting a peer mentoring program to help struggling students clear NPTEL exams.\r\nInstitutional: I will take initiatives to organize IEEE programs for students."
+    "Exceptional Initiatives": "Academic: Starting a peer mentoring program to help struggling students clear NPTEL exams.\r\nInstitutional: I will take initiatives to organize IEEE programs for students.",
+    "Teaching Hours per week": "14.25",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4.75"
   },
   {
     "Name": "Dr Sumathi R",
@@ -922,7 +1066,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "3",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Introduced innovative teaching and learning practices using MATLAB to enhance student engagement, improve conceptual understanding, and strengthen academic performance through interactive simulations, visualizations, and problem-solving activities."
+    "Exceptional Initiatives": "Introduced innovative teaching and learning practices using MATLAB to enhance student engagement, improve conceptual understanding, and strengthen academic performance through interactive simulations, visualizations, and problem-solving activities.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Dilli Babu K",
@@ -947,7 +1095,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Industry Interaction Programs-\r\nOrganize guest lectures, workshops, and industry expert sessions."
+    "Exceptional Initiatives": "Industry Interaction Programs-\r\nOrganize guest lectures, workshops, and industry expert sessions.",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Bharath H",
@@ -972,7 +1124,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Organizing  Dim and Moon light workshops, Mentoring students for Hackathon and National levell Bike and Car Events. Conducting International Conference in Mechanical Science. Being Resource Person in summer camp, NASA activities etc."
+    "Exceptional Initiatives": "Organizing  Dim and Moon light workshops, Mentoring students for Hackathon and National levell Bike and Car Events. Conducting International Conference in Mechanical Science. Being Resource Person in summer camp, NASA activities etc.",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Rajesh M",
@@ -997,7 +1153,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Organizing moon and dim light workshop, Mentoring students for Hackathon, Bike & car events, Being Resource person in Summer camp, NASA activities, etc."
+    "Exceptional Initiatives": "Organizing moon and dim light workshop, Mentoring students for Hackathon, Bike & car events, Being Resource person in Summer camp, NASA activities, etc.",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Deepika M",
@@ -1022,7 +1182,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "Went to chair person in Gandhigram rural institute"
+    "Exceptional Initiatives": "Went to chair person in Gandhigram rural institute",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Janani R",
@@ -1047,7 +1211,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Plan to introduce AI-based learning activities for students and integrate more AI tools to enhance learning assistance and academic outcomes."
+    "Exceptional Initiatives": "Plan to introduce AI-based learning activities for students and integrate more AI tools to enhance learning assistance and academic outcomes.",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "2.5"
   },
   {
     "Name": "Gokilavani S",
@@ -1072,7 +1240,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "I will mentor students in developing innovative projects and motivate them to showcase their work in project expos and competitions."
+    "Exceptional Initiatives": "I will mentor students in developing innovative projects and motivate them to showcase their work in project expos and competitions.",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "2.5"
   },
   {
     "Name": "Infant Jegan Rakesh A J",
@@ -1097,7 +1269,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "To Handle Value added courses for C28 Mech and Mechatronics\r\n"
+    "Exceptional Initiatives": "To Handle Value added courses for C28 Mech and Mechatronics\r\n",
+    "Teaching Hours per week": "17.25",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "3.5",
+    "Hours for Self Development": "3.25"
   },
   {
     "Name": "Sruthilaya U",
@@ -1122,7 +1298,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "As a tutor, actively contributed to the career enhancement of students by providing continuous guidance on higher education opportunities, competitive examinations, industry certifications, internships, and employability skills. Regularly mentored students in career planning, resume preparation, interview techniques, aptitude training, and professional communication, enabling them to make informed career decisions. Facilitated interactions with industry experts, alumni, and placement professionals through career guidance sessions and workshops, thereby enhancing students' awareness of current industry requirements. Consistent support and motivation helped improve student participation in placement activities, resulting in increased employability and successful job placements.\r\n"
+    "Exceptional Initiatives": "As a tutor, actively contributed to the career enhancement of students by providing continuous guidance on higher education opportunities, competitive examinations, industry certifications, internships, and employability skills. Regularly mentored students in career planning, resume preparation, interview techniques, aptitude training, and professional communication, enabling them to make informed career decisions. Facilitated interactions with industry experts, alumni, and placement professionals through career guidance sessions and workshops, thereby enhancing students' awareness of current industry requirements. Consistent support and motivation helped improve student participation in placement activities, resulting in increased employability and successful job placements.\r\n",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Revathi M",
@@ -1147,7 +1327,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "PROJECT GUIDENCE,HACKATHON GUIDENCE"
+    "Exceptional Initiatives": "PROJECT GUIDENCE,HACKATHON GUIDENCE",
+    "Teaching Hours per week": "23.25",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "2.5",
+    "Hours for Self Development": "4.25"
   },
   {
     "Name": "Gomathi S",
@@ -1172,7 +1356,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Implement exceptional initiatives in Mathematics through innovative teaching methods, research activities, and effective student mentoring to enhance academic excellence and learning outcomes, and plan to publish research papers in reputed journals."
+    "Exceptional Initiatives": "Implement exceptional initiatives in Mathematics through innovative teaching methods, research activities, and effective student mentoring to enhance academic excellence and learning outcomes, and plan to publish research papers in reputed journals.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Trinita Felcy D",
@@ -1197,7 +1385,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "6",
-    "Exceptional Initiatives": "Conducted PowerBI Workshop in RGU"
+    "Exceptional Initiatives": "Conducted PowerBI Workshop in RGU",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Kelin S Jhonson",
@@ -1222,7 +1414,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "* Served as Tutor for the C28 Batch and continuously motivated students to participate in Hackathons, SIH, NPTEL courses, NASA programs, and inter-college events.\r\n* Guided and mentored students in academics, career development, and skill enhancement activities.\r\n* Served as IQAC and AQAR Coordinator for the past year and the current academic year, contributing to successful audit outcomes.\r\n* Published five research papers and secured one patent, promoting research and innovation.\r\n* Organized several technical and non-technical events for student development and engagement.\r\n* Actively supported admission activities by counseling prospective students and encouraging enrollment in the institution.\r\n* Contributed to institutional growth through mentoring, quality assurance, research, event management, and admission support.\r\n"
+    "Exceptional Initiatives": "* Served as Tutor for the C28 Batch and continuously motivated students to participate in Hackathons, SIH, NPTEL courses, NASA programs, and inter-college events.\r\n* Guided and mentored students in academics, career development, and skill enhancement activities.\r\n* Served as IQAC and AQAR Coordinator for the past year and the current academic year, contributing to successful audit outcomes.\r\n* Published five research papers and secured one patent, promoting research and innovation.\r\n* Organized several technical and non-technical events for student development and engagement.\r\n* Actively supported admission activities by counseling prospective students and encouraging enrollment in the institution.\r\n* Contributed to institutional growth through mentoring, quality assurance, research, event management, and admission support.\r\n",
+    "Teaching Hours per week": "19.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Dr. Santhosh Balaji M",
@@ -1247,7 +1443,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "7",
-    "Exceptional Initiatives": "Actively drafted and submitted a project proposal to funding agencies like DST/SERB/AICTE for departmental lab modernization."
+    "Exceptional Initiatives": "Actively drafted and submitted a project proposal to funding agencies like DST/SERB/AICTE for departmental lab modernization.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Suresh Kumar A",
@@ -1272,7 +1472,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "5",
-    "Exceptional Initiatives": "Student-based startups have been initiated, and an increasing number of students are actively participating in hackathons and winning prizes at various levels."
+    "Exceptional Initiatives": "Student-based startups have been initiated, and an increasing number of students are actively participating in hackathons and winning prizes at various levels.",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "9"
   },
   {
     "Name": "Sivabalan E",
@@ -1297,7 +1501,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "4",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "18",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Suganya K",
@@ -1322,7 +1530,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Plan to implement exceptional initiatives in Mathematics through workshops, seminars, and skill-development programs for students, and pursue doctoral registration to further strengthen my academic and research career."
+    "Exceptional Initiatives": "Plan to implement exceptional initiatives in Mathematics through workshops, seminars, and skill-development programs for students, and pursue doctoral registration to further strengthen my academic and research career.",
+    "Teaching Hours per week": "4.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "11.5"
   },
   {
     "Name": "Santhana selva jothi G",
@@ -1347,7 +1559,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "Industry expert Session initiatives, Fetching Industry Challenges from Industry experts as the Live Project for the students, AI & Skill Development Programs. "
+    "Exceptional Initiatives": "Industry expert Session initiatives, Fetching Industry Challenges from Industry experts as the Live Project for the students, AI & Skill Development Programs. ",
+    "Teaching Hours per week": "25",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "0"
   },
   {
     "Name": "Dr. Dinesh Kumar S",
@@ -1372,7 +1588,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "1. Build research proposal\r\n2. Development of student project such as national / international hackathons\r\n3. Conduct workshops/ seminar/ FDP \r\n"
+    "Exceptional Initiatives": "1. Build research proposal\r\n2. Development of student project such as national / international hackathons\r\n3. Conduct workshops/ seminar/ FDP \r\n",
+    "Teaching Hours per week": "13.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Ishwarya T",
@@ -1397,7 +1617,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "1.Providing Tamil language training and support to foreign students to facilitate their academic and cultural integration.\r\n2. Initiated and coordinated the NPTEL Believers Coaching Programme to improve student participation and certification success.\r\n3.Serving as the Department Coordinator for NPTEL and actively mentoring students for NPTEL certification courses.\r\n4.Established and coordinated outreach and extension activities through the Uyir Club by signing and implementing an MoU with an NGO.\r\n5.Mentoring 55 students and providing continuous academic and career guidance..\r\n"
+    "Exceptional Initiatives": "1.Providing Tamil language training and support to foreign students to facilitate their academic and cultural integration.\r\n2. Initiated and coordinated the NPTEL Believers Coaching Programme to improve student participation and certification success.\r\n3.Serving as the Department Coordinator for NPTEL and actively mentoring students for NPTEL certification courses.\r\n4.Established and coordinated outreach and extension activities through the Uyir Club by signing and implementing an MoU with an NGO.\r\n5.Mentoring 55 students and providing continuous academic and career guidance..\r\n",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Dr. Rajagopal T K P",
@@ -1422,7 +1646,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Publish high-quality research papers in indexed journals and conferences.\r\nOrganize national/international conferences, workshops, FDPs, and hackathons.\r\nContributed to NAAC, NBA, NIRF, or accreditation activities."
+    "Exceptional Initiatives": "Publish high-quality research papers in indexed journals and conferences.\r\nOrganize national/international conferences, workshops, FDPs, and hackathons.\r\nContributed to NAAC, NBA, NIRF, or accreditation activities.",
+    "Teaching Hours per week": "27.75",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Vasanthi B",
@@ -1447,7 +1675,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "3",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "took sincere efforts in applying  3 Funding proposals from ICSSR in this academic year.\r\nConducted interdisciplinary research in Management, Artificial Intelligence, Social Network Analysis, and Financial Risk Management.\r\nPublished research papers in reputed journals and international publications, including Scopus-indexed journals, Springer, and Elsevier.\r\nIntegrated emerging topics such as AI, Industry 4.0, Design Thinking, and Digital Marketing into teaching and research.\r\nOrganized entrepreneurship programmes, industry visits, IPR workshops, and practical learning activities for students.\r\nPublished a patent and actively contributed to innovative research initiatives.\r\nParticipated in international conferences and academic exchange programmes to enhance global exposure and collaboration.\r\nPromoted Outcome-Based Education (OBE), online learning platforms, and technology-enabled teaching practices.\r\nContinuously upgraded professional knowledge through NPTEL courses, ATAL FDPs, and other national and international certification programmes."
+    "Exceptional Initiatives": "took sincere efforts in applying  3 Funding proposals from ICSSR in this academic year.\r\nConducted interdisciplinary research in Management, Artificial Intelligence, Social Network Analysis, and Financial Risk Management.\r\nPublished research papers in reputed journals and international publications, including Scopus-indexed journals, Springer, and Elsevier.\r\nIntegrated emerging topics such as AI, Industry 4.0, Design Thinking, and Digital Marketing into teaching and research.\r\nOrganized entrepreneurship programmes, industry visits, IPR workshops, and practical learning activities for students.\r\nPublished a patent and actively contributed to innovative research initiatives.\r\nParticipated in international conferences and academic exchange programmes to enhance global exposure and collaboration.\r\nPromoted Outcome-Based Education (OBE), online learning platforms, and technology-enabled teaching practices.\r\nContinuously upgraded professional knowledge through NPTEL courses, ATAL FDPs, and other national and international certification programmes.",
+    "Teaching Hours per week": "29.25",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "3.5",
+    "Hours for Self Development": "3.25"
   },
   {
     "Name": "Jaivarshini E",
@@ -1472,7 +1704,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "As a tutor of C28 Batch, I will take initiatives to encourage students to pursue self-learning courses, research-oriented learning, undertake competitive exams, and focus on career development."
+    "Exceptional Initiatives": "As a tutor of C28 Batch, I will take initiatives to encourage students to pursue self-learning courses, research-oriented learning, undertake competitive exams, and focus on career development.",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Ramanandhini K",
@@ -1497,7 +1733,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "5",
-    "Exceptional Initiatives": "AI Avengers Team Faculty Mentor "
+    "Exceptional Initiatives": "AI Avengers Team Faculty Mentor ",
+    "Teaching Hours per week": "18",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Dr. Abiram A",
@@ -1522,7 +1762,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "4",
     "No.of Project Proposals submission in 26-27 (target)": "10",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "My primary goal for 2026–2027 is to strengthen the institution’s research ecosystem by increasing both the quantity and quality of research output, with a target of achieving around 200 high-quality publications. Each research faculty in research-hub will be insisted and encouraged to produce around 10 papers this year.  I also aim to secure more funded projects, patents, and enhancing interdisciplinary collaborations. A key priority is to establish robust support systems that improve the institution’s research visibility and impact.\r\n\r\nAs a research faculty my primary goals for 2026–2027 are to publish high-impact research in reputed journals, secure externally funded projects, and expand national and international collaborations. I also aim to contribute significantly to the institution’s research growth and reputation.\r\n"
+    "Exceptional Initiatives": "My primary goal for 2026–2027 is to strengthen the institution’s research ecosystem by increasing both the quantity and quality of research output, with a target of achieving around 200 high-quality publications. Each research faculty in research-hub will be insisted and encouraged to produce around 10 papers this year.  I also aim to secure more funded projects, patents, and enhancing interdisciplinary collaborations. A key priority is to establish robust support systems that improve the institution’s research visibility and impact.\r\n\r\nAs a research faculty my primary goals for 2026–2027 are to publish high-impact research in reputed journals, secure externally funded projects, and expand national and international collaborations. I also aim to contribute significantly to the institution’s research growth and reputation.\r\n",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Rosalin Nancy R",
@@ -1547,7 +1791,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "To increase the quality of Teaching and Looker Studio. Appling Ph.d (Personal Profile Building) "
+    "Exceptional Initiatives": "To increase the quality of Teaching and Looker Studio. Appling Ph.d (Personal Profile Building) ",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Dr. Bradha M",
@@ -1572,7 +1820,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "4",
     "No.of Project Proposals submission in 26-27 (target)": "10",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "\tResearch funding opportunities and developed project proposals addressing sustainable energy and environmental challenges.\r\n\tMentor research scholars in advanced materials synthesis, characterization, and energy-related research projects.\r\n\tOrganizing and delivering invited talks, workshops, and technical sessions to enhance research awareness and scientific communication among students and faculty members.\r\n\tActively contributing to the development of research consultancy work in RTC\r\n\tTo establish active national and international research collaborations with leading researchers, universities, and industries in the fields of energy materials, solid oxide fuel cells, and electrochemical energy storage\r\n\tIndustry–academia collaboration by identifying potential partners for joint research, consultancy, and technology development activities.\r\n\tPublishing high-impact research articles in reputed international journals and actively participating in peer-review and editorial activities.\r\n\tFacilitating international visibility of the institution through collaborative research, conference participation, journal activities, and professional networking\r\n"
+    "Exceptional Initiatives": "\tResearch funding opportunities and developed project proposals addressing sustainable energy and environmental challenges.\r\n\tMentor research scholars in advanced materials synthesis, characterization, and energy-related research projects.\r\n\tOrganizing and delivering invited talks, workshops, and technical sessions to enhance research awareness and scientific communication among students and faculty members.\r\n\tActively contributing to the development of research consultancy work in RTC\r\n\tTo establish active national and international research collaborations with leading researchers, universities, and industries in the fields of energy materials, solid oxide fuel cells, and electrochemical energy storage\r\n\tIndustry–academia collaboration by identifying potential partners for joint research, consultancy, and technology development activities.\r\n\tPublishing high-impact research articles in reputed international journals and actively participating in peer-review and editorial activities.\r\n\tFacilitating international visibility of the institution through collaborative research, conference participation, journal activities, and professional networking\r\n",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "22"
   },
   {
     "Name": "Sri Roopini U",
@@ -1597,7 +1849,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "5",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Anjala Surya",
@@ -1622,14 +1878,18 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "NA"
+    "Exceptional Initiatives": "NA",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Karthick L.S",
     "Email": "karthick.ece@rathinam.in",
     "Name of the faculty": "Karthick L S",
     "Designation": "Assistant Professor ",
-    "Job Title": "HoD-Incharge/ECE",
+    "Job Title": "Head of the Department",
     "DOJ": "3/16/22",
     "Qualification": "M.E",
     "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "4 years 2 months 20 days",
@@ -1647,7 +1907,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Placement and MoU"
+    "Exceptional Initiatives": "Placement and MoU",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Gini Priya K L",
@@ -1672,7 +1936,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "4",
     "No.of KPI submissions in 26-27 (target)": "3",
-    "Exceptional Initiatives": "NIL"
+    "Exceptional Initiatives": "NIL",
+    "Teaching Hours per week": "30",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "",
+    "Hours for Self Development": ""
   },
   {
     "Name": "Narmadha K",
@@ -1697,7 +1965,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "3",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Madhumitha D",
@@ -1722,7 +1994,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Conducted intensive guiding and training sessions to bridge skill gaps. Resulted in 22 student placements - 11 in PRICOL and 11 in LMW - by aligning student preparation with company requirements.\r\n"
+    "Exceptional Initiatives": "Conducted intensive guiding and training sessions to bridge skill gaps. Resulted in 22 student placements - 11 in PRICOL and 11 in LMW - by aligning student preparation with company requirements.\r\n",
+    "Teaching Hours per week": "24.75",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Pradeep K",
@@ -1747,7 +2023,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "8",
-    "Exceptional Initiatives": "0"
+    "Exceptional Initiatives": "0",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "2.5"
   },
   {
     "Name": "Pavithra B",
@@ -1772,7 +2052,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "Event  and file initiative"
+    "Exceptional Initiatives": "Event  and file initiative",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Kavitha K",
@@ -1797,7 +2081,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Mentoring student projects, internships, and research activities, leading to publications and competition achievements."
+    "Exceptional Initiatives": "Mentoring student projects, internships, and research activities, leading to publications and competition achievements.",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Sudha N",
@@ -1822,7 +2110,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "4",
-    "Exceptional Initiatives": "Admission canvassing \r\nMentoring students \r\nDeveloping skills through FDP,workshops and seminar\r\nDoing Phd course work \r\n"
+    "Exceptional Initiatives": "Admission canvassing \r\nMentoring students \r\nDeveloping skills through FDP,workshops and seminar\r\nDoing Phd course work \r\n",
+    "Teaching Hours per week": "13.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Kousalya Devi S",
@@ -1847,32 +2139,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "3",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Awaiting"
-  },
-  {
-    "Name": "Dr. Deepa J",
-    "Email": "deepa.mba@rathinam.in",
-    "Name of the faculty": "Dr J Deepa",
-    "Designation": "Associate Professor ",
-    "Job Title": "Associate Professor",
-    "DOJ": "9/1/26",
-    "Qualification": "MBA., M.Phil., Ph.D., DNYS.,",
-    "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "10 Months",
-    "Other Experiences in years,months,days": "15 years",
-    "Department": "MBA",
-    "Reporting To (Name and Designation)": "Mr.Arunraaj Manickaraj, Director",
-    "No.of Theory Papers handling": "2",
-    "No.of Practical Papers handling": "1",
-    "No.of Theory cum Practical Papers handling      ": "0",
-    "No.of mentees": "17",
-    "Additional Responsibilities in Dept. \r\n(Ex: IQAC Coordinator, Exam cell Coordinator.\r\nPlease mention the activities being performed for this responsibilities)": "-",
-    "Additional Responsibilities in Institute \r\n(Ex: NSS Incharge, Antidrug Committee Incharge.\r\nPlease mention the activities being performed for this responsibility)": "-",
-    "No.of Paper publications in 26-27 (target)": "1",
-    "No.of Patent publications in 26-27 (target)": "0",
-    "No.of Scheme Proposals submission in 26-27 (target)": "0",
-    "No.of Project Proposals submission in 26-27 (target)": "0",
-    "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "CAT New module framed."
+    "Exceptional Initiatives": "Awaiting",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "2.5"
   },
   {
     "Name": "Radha G",
@@ -1897,7 +2168,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Contribution to NBA"
+    "Exceptional Initiatives": "Contribution to NBA",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Thanush N",
@@ -1922,7 +2197,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "7",
-    "Exceptional Initiatives": "0"
+    "Exceptional Initiatives": "0",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Nanthini B",
@@ -1947,7 +2226,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "5",
     "No.of Project Proposals submission in 26-27 (target)": "5",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Plan to strengthen industry collaborations, enhance research and innovation activities, organize skill development programs, promote student internships and placements, introduce value-added courses, and contribute to accreditation and quality enhancement initiatives for the overall growth of the students and the department."
+    "Exceptional Initiatives": "Plan to strengthen industry collaborations, enhance research and innovation activities, organize skill development programs, promote student internships and placements, introduce value-added courses, and contribute to accreditation and quality enhancement initiatives for the overall growth of the students and the department.",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "RAJATHI S",
@@ -1972,7 +2255,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "NIL"
+    "Exceptional Initiatives": "NIL",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Archana S",
@@ -1997,7 +2284,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Organizing workshop and seminar \r\n"
+    "Exceptional Initiatives": "Organizing workshop and seminar \r\n",
+    "Teaching Hours per week": "12",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "8"
   },
   {
     "Name": "Manjula Devi S",
@@ -2022,7 +2313,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": " Completing a self-directed research project"
+    "Exceptional Initiatives": " Completing a self-directed research project",
+    "Teaching Hours per week": "13.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Alamelumangai R",
@@ -2047,7 +2342,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "NPTEL certifications "
+    "Exceptional Initiatives": "NPTEL certifications ",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Jeniton S",
@@ -2072,7 +2371,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Industry Collaboration and Internship Programs"
+    "Exceptional Initiatives": "Industry Collaboration and Internship Programs",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Harini D",
@@ -2097,7 +2400,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "JANANIPRIYA S",
@@ -2122,7 +2429,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Project guidelines, Next hackathon  mentor "
+    "Exceptional Initiatives": "Project guidelines, Next hackathon  mentor ",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "APARNA C",
@@ -2147,7 +2458,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Anything "
+    "Exceptional Initiatives": "Anything ",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Santhini T",
@@ -2161,9 +2476,9 @@
     "Other Experiences in years,months,days": "9 Years and 10 months",
     "Department": "MCA",
     "Reporting To (Name and Designation)": "Dr K Anuradha Professor and Director / MCA",
-    "No.of Theory Papers handling": "2",
+    "No.of Theory Papers handling": "1",
     "No.of Practical Papers handling": "2",
-    "No.of Theory cum Practical Papers handling      ": "2",
+    "No.of Theory cum Practical Papers handling      ": "1",
     "No.of mentees": "112",
     "Additional Responsibilities in Dept. \r\n(Ex: IQAC Coordinator, Exam cell Coordinator.\r\nPlease mention the activities being performed for this responsibilities)": "Tutor (II MCA A), IQAC Coordinator, Association, RLI, & NASA (Technical) ,Time Table Coordinator,NPTEL Coordinator",
     "Additional Responsibilities in Institute \r\n(Ex: NSS Incharge, Antidrug Committee Incharge.\r\nPlease mention the activities being performed for this responsibility)": "NIL",
@@ -2172,7 +2487,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "nil"
+    "Exceptional Initiatives": "nil",
+    "Teaching Hours per week": "15",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Lamya Sainambu S",
@@ -2197,7 +2516,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "To introduce AI-enabled and project-based learning methodologies in core courses, strengthen student mentoring activities focusing on higher education, entrepreneurship, and career development."
+    "Exceptional Initiatives": "To introduce AI-enabled and project-based learning methodologies in core courses, strengthen student mentoring activities focusing on higher education, entrepreneurship, and career development.",
+    "Teaching Hours per week": "22.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Reshma N",
@@ -2222,7 +2545,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "nil"
+    "Exceptional Initiatives": "nil",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "2.5"
   },
   {
     "Name": "Parveen Banu M",
@@ -2247,7 +2574,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "ACTIVE LEARNING AND STUDENT MENTORSHIP"
+    "Exceptional Initiatives": "ACTIVE LEARNING AND STUDENT MENTORSHIP",
+    "Teaching Hours per week": "27",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Kandasamy K",
@@ -2272,7 +2603,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Registering PhD in RGU"
+    "Exceptional Initiatives": "Registering PhD in RGU",
+    "Teaching Hours per week": "15.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "3.25"
   },
   {
     "Name": "Dr. Muthulekshmi S",
@@ -2297,7 +2632,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Research Collaborations and MOU with research forums"
+    "Exceptional Initiatives": "Research Collaborations and MOU with research forums",
+    "Teaching Hours per week": "21",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "4"
   },
   {
     "Name": "Dr. P. M Shiyana",
@@ -2322,7 +2661,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Securing research grants, patents, or funded projects.\r\nEstablishing industry collaborations, MoUs."
+    "Exceptional Initiatives": "Securing research grants, patents, or funded projects.\r\nEstablishing industry collaborations, MoUs.",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Mathankumar C",
@@ -2347,7 +2690,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "5",
-    "Exceptional Initiatives": "No"
+    "Exceptional Initiatives": "No",
+    "Teaching Hours per week": "10.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "9.5"
   },
   {
     "Name": "Meenakshi K",
@@ -2372,32 +2719,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "1",
-    "Exceptional Initiatives": "Nil"
-  },
-  {
-    "Name": "Dr.K.Anuratha",
-    "Email": "anuradha.mca@rathinam.in",
-    "Name of the faculty": "Dr K Anuradha ",
-    "Designation": "Professor",
-    "Job Title": "Director, ",
-    "DOJ": "6/9/25",
-    "Qualification": "Ph.D",
-    "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "1 year ",
-    "Other Experiences in years,months,days": "22",
-    "Department": "MCA",
-    "Reporting To (Name and Designation)": "Principal ",
-    "No.of Theory Papers handling": "0",
-    "No.of Practical Papers handling": "1",
-    "No.of Theory cum Practical Papers handling      ": "0",
-    "No.of mentees": "225",
-    "Additional Responsibilities in Dept. \r\n(Ex: IQAC Coordinator, Exam cell Coordinator.\r\nPlease mention the activities being performed for this responsibilities)": "Department Administration, BoS, ",
-    "Additional Responsibilities in Institute \r\n(Ex: NSS Incharge, Antidrug Committee Incharge.\r\nPlease mention the activities being performed for this responsibility)": "Malpractice committee ",
-    "No.of Paper publications in 26-27 (target)": "5",
-    "No.of Patent publications in 26-27 (target)": "2",
-    "No.of Scheme Proposals submission in 26-27 (target)": "1",
-    "No.of Project Proposals submission in 26-27 (target)": "1",
-    "No.of KPI submissions in 26-27 (target)": "10",
-    "Exceptional Initiatives": "1. Signed MoU with two companies\r\n2. Students NPTEL certifications: 132 in AY : 2025 - 2026\r\n3. All faculty cleared NPTEL certifications\r\n4. 34 project presentations by II MCA students in IEEE SB Sponsored event\r\n5. 25 patents filed / published by students (II MCA)\r\n6. 3 papers accepted in Scopus Indexed IEEE conferences\r\n7. Four students won prizes at Technical events organized by Hindusthan College of Arts & Science and Sri Ramakrishna College of Arts and Science"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "30",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "",
+    "Hours for Self Development": ""
   },
   {
     "Name": "Sankavi A",
@@ -2422,7 +2748,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Contributed to departmental quality improvement activities, accreditation documentation, and academic audits."
+    "Exceptional Initiatives": "Contributed to departmental quality improvement activities, accreditation documentation, and academic audits.",
+    "Teaching Hours per week": "21.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "5",
+    "Hours for Self Development": "3.25"
   },
   {
     "Name": "Dr. Madesh R",
@@ -2447,7 +2777,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "International Conference-MECH_Coordinator, \r\nNPTEL Local Chapter - GOLD + TOP 1% achieved\r\nIEI event conducted, \r\nNASA (3D Printing class), \r\nStudent Project convert to PATENT\r\nPublished SCIE Q1 article, Elsevier IF:6.3, Review Article\r\nCAT subject handled (Electropneumatic systems)\r\nStarted Additive Manufacturing publication work in Mech dept."
+    "Exceptional Initiatives": "International Conference-MECH_Coordinator, \r\nNPTEL Local Chapter - GOLD + TOP 1% achieved\r\nIEI event conducted, \r\nNASA (3D Printing class), \r\nStudent Project convert to PATENT\r\nPublished SCIE Q1 article, Elsevier IF:6.3, Review Article\r\nCAT subject handled (Electropneumatic systems)\r\nStarted Additive Manufacturing publication work in Mech dept.",
+    "Teaching Hours per week": "17.25",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "3.75"
   },
   {
     "Name": "Sathishkumar A",
@@ -2472,7 +2806,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "18.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Arul Arobana Esthar D",
@@ -2497,7 +2835,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "3",
-    "Exceptional Initiatives": "Fee payment follow up for fist years."
+    "Exceptional Initiatives": "Fee payment follow up for fist years.",
+    "Teaching Hours per week": "27",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Dr. S Chenthilnath",
@@ -2522,7 +2864,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "2",
-    "Exceptional Initiatives": "Nil"
+    "Exceptional Initiatives": "Nil",
+    "Teaching Hours per week": "21",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "9"
   },
   {
     "Name": "Akileshwari R",
@@ -2547,7 +2893,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Would like to achieve in NPTEL and would like to publish my research papers in SCI journals."
+    "Exceptional Initiatives": "Would like to achieve in NPTEL and would like to publish my research papers in SCI journals.",
+    "Teaching Hours per week": "18",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Niveditha R",
@@ -2572,7 +2922,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Integrating AI tools to improve speaking, writing, and presentation skills, Podcast-Based Learning."
+    "Exceptional Initiatives": "Integrating AI tools to improve speaking, writing, and presentation skills, Podcast-Based Learning.",
+    "Teaching Hours per week": "9",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "10",
+    "Hours for Self Development": "11"
   },
   {
     "Name": "Priyadharshini",
@@ -2597,7 +2951,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "8",
-    "Exceptional Initiatives": "Workshop conducted during rgf"
+    "Exceptional Initiatives": "Workshop conducted during rgf",
+    "Teaching Hours per week": "11.25",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6.75"
   },
   {
     "Name": "Muthulakshmi G",
@@ -2611,9 +2969,9 @@
     "Other Experiences in years,months,days": "2 years ",
     "Department": "MCA",
     "Reporting To (Name and Designation)": "Dr.Anuradha K",
-    "No.of Theory Papers handling": "3",
-    "No.of Practical Papers handling": "4",
-    "No.of Theory cum Practical Papers handling      ": "4",
+    "No.of Theory Papers handling": "0",
+    "No.of Practical Papers handling": "0",
+    "No.of Theory cum Practical Papers handling      ": "3",
     "No.of mentees": "58",
     "Additional Responsibilities in Dept. \r\n(Ex: IQAC Coordinator, Exam cell Coordinator.\r\nPlease mention the activities being performed for this responsibilities)": "Research Coordinator \r\nNewsletter Coordinator \r\nMoM coordinator \r\nAdmission coordinator \r\nAffiliation coordinator ",
     "Additional Responsibilities in Institute \r\n(Ex: NSS Incharge, Antidrug Committee Incharge.\r\nPlease mention the activities being performed for this responsibility)": "Nil",
@@ -2622,32 +2980,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "Guided Final year students in research projects and publications."
-  },
-  {
-    "Name": "Dr. Rajavel A",
-    "Email": "rajavel.soe@rathinam.in",
-    "Name of the faculty": "Dr.A.Rajavel",
-    "Designation": "Associate Professor ",
-    "Job Title": "Associate Dean",
-    "DOJ": "9/12/25",
-    "Qualification": "Ph.D",
-    "Experience in RTC (as on 30.06.2026) \r\nEg: 3 years 11 months 25 days": "9 months 20 days",
-    "Other Experiences in years,months,days": "19 years 3 months",
-    "Department": "AI&DS",
-    "Reporting To (Name and Designation)": "Dr. Geetha Principal ",
-    "No.of Theory Papers handling": "0",
-    "No.of Practical Papers handling": "0",
-    "No.of Theory cum Practical Papers handling      ": "0",
-    "No.of mentees": "0",
-    "Additional Responsibilities in Dept. \r\n(Ex: IQAC Coordinator, Exam cell Coordinator.\r\nPlease mention the activities being performed for this responsibilities)": "Associate Dean",
-    "Additional Responsibilities in Institute \r\n(Ex: NSS Incharge, Antidrug Committee Incharge.\r\nPlease mention the activities being performed for this responsibility)": "Nil",
-    "No.of Paper publications in 26-27 (target)": "3",
-    "No.of Patent publications in 26-27 (target)": "1",
-    "No.of Scheme Proposals submission in 26-27 (target)": "1",
-    "No.of Project Proposals submission in 26-27 (target)": "1",
-    "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "SAR and Prequalifier submission "
+    "Exceptional Initiatives": "Guided Final year students in research projects and publications.",
+    "Teaching Hours per week": "18",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Vineetha V",
@@ -2672,7 +3009,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "6",
-    "Exceptional Initiatives": "\"Through proactive leadership, innovative academic practices, student mentoring, research promotion, and institutional development activities, significant contributions were made toward enhancing the quality of education, student success, and the overall growth of the institution.\""
+    "Exceptional Initiatives": "\"Through proactive leadership, innovative academic practices, student mentoring, research promotion, and institutional development activities, significant contributions were made toward enhancing the quality of education, student success, and the overall growth of the institution.\"",
+    "Teaching Hours per week": "25.5",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Kewin Joanes M",
@@ -2697,7 +3038,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Communication (Pitch) training for Hackathons and other Technical Events "
+    "Exceptional Initiatives": "Communication (Pitch) training for Hackathons and other Technical Events ",
+    "Teaching Hours per week": "6",
+    "Hours for Preparation": "6",
+    "Hours for Additional Resposibilities": "20",
+    "Hours for Self Development": "10"
   },
   {
     "Name": "Padma Harini S",
@@ -2722,7 +3067,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "0",
-    "Exceptional Initiatives": "NA"
+    "Exceptional Initiatives": "NA",
+    "Teaching Hours per week": "0",
+    "Hours for Preparation": "0",
+    "Hours for Additional Resposibilities": "42",
+    "Hours for Self Development": ""
   },
   {
     "Name": "Vignesh P",
@@ -2747,7 +3096,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Encouraging project-based learning, problem-solving activities, and interdisciplinary projects"
+    "Exceptional Initiatives": "Encouraging project-based learning, problem-solving activities, and interdisciplinary projects",
+    "Teaching Hours per week": "18",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "6"
   },
   {
     "Name": "Thulir",
@@ -2772,7 +3125,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Exam cell , anna university affiliation"
+    "Exceptional Initiatives": "Exam cell , anna university affiliation",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "3",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Nivetha M",
@@ -2797,7 +3154,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Motivated students to actively engage in project work and provided continuous guidance to enhance their technical knowledge and innovation skills."
+    "Exceptional Initiatives": "Motivated students to actively engage in project work and provided continuous guidance to enhance their technical knowledge and innovation skills.",
+    "Teaching Hours per week": "19.5",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "4.5"
   },
   {
     "Name": "Sumathi M",
@@ -2822,7 +3183,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "0",
     "No.of Project Proposals submission in 26-27 (target)": "0",
     "No.of KPI submissions in 26-27 (target)": "2",
-    "Exceptional Initiatives": "nil"
+    "Exceptional Initiatives": "nil",
+    "Teaching Hours per week": "6.75",
+    "Hours for Preparation": "12",
+    "Hours for Additional Resposibilities": "15",
+    "Hours for Self Development": "8.25"
   },
   {
     "Name": "Priyanga M",
@@ -2847,7 +3212,11 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "2",
     "No.of Project Proposals submission in 26-27 (target)": "2",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Need to improve student activities"
+    "Exceptional Initiatives": "Need to improve student activities",
+    "Teaching Hours per week": "12.75",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "6",
+    "Hours for Self Development": "5.25"
   },
   {
     "Name": "Cinthiya J",
@@ -2872,6 +3241,10 @@
     "No.of Scheme Proposals submission in 26-27 (target)": "1",
     "No.of Project Proposals submission in 26-27 (target)": "1",
     "No.of KPI submissions in 26-27 (target)": "12",
-    "Exceptional Initiatives": "Implemented outcome-based education and assessment improvements."
+    "Exceptional Initiatives": "Implemented outcome-based education and assessment improvements.",
+    "Teaching Hours per week": "16.5",
+    "Hours for Preparation": "18",
+    "Hours for Additional Resposibilities": "0",
+    "Hours for Self Development": "7.5"
   }
 ]
