@@ -223,11 +223,19 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const id = params.get('id');
+        const type = params.get('type');
 
-        fetch('faculty.json')
+        const isCoe = type === 'coe';
+        const isTraining = type === 'training';
+
+        let dataUrl = 'faculty.json';
+        if (isCoe) dataUrl = 'COE.json';
+        if (isTraining) dataUrl = 'training.json';
+
+        fetch(dataUrl)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error("Unable to load faculty.json");
+                    throw new Error("Unable to load " + dataUrl);
                 }
                 return response.json();
             })
@@ -240,6 +248,272 @@
                 }
 
                 const faculty = data[id];
+
+                if (isTraining) {
+                    // Generate initials for avatar
+                    const initials = faculty["NAME"]
+                        ? faculty["NAME"].trim().split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()
+                        : "TR";
+
+                    let headerHtml = `
+                        <div class="profile-header">
+                            <div class="profile-avatar">${initials}</div>
+                            <div class="profile-title-area">
+                                <h1>${faculty["NAME"]}</h1>
+                                <p>${faculty["DESIGNATION"] || "Faculty Member"} &bull; Training Department</p>
+                            </div>
+                        </div>
+                    `;
+
+                    let html = headerHtml + '<div class="profile-grid">';
+
+                    /* General Information Card for Training */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <h3>General Information</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const trainingInfoFields = [
+                        { label: "Full Name", key: "NAME" },
+                        { label: "Designation", key: "DESIGNATION" },
+                        { label: "Reporting To", key: "REPORTING TO" },
+                        { label: "Batch", key: "BATCH" },
+                        { label: "Year / Class", key: "YEAR" },
+                        { label: "Date of Joining", key: "DATE  OF JOINING" }
+                    ];
+
+                    trainingInfoFields.forEach(field => {
+                        const val = faculty[field.key];
+                        if (val !== undefined && val !== "") {
+                            html += `
+                                <div class="info-group">
+                                    <label>${field.label}</label>
+                                    <div class="info-value">${val}</div>
+                                </div>
+                            `;
+                        }
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    /* Job & Responsibility Card for Training */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                <h3>Responsibilities & Growth</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const trainingResponsibilityFields = [
+                        { label: "Other Responsibility", key: "OTHER RESPONSIBILITY", fullWidth: true },
+                        { label: "Personal Growth or Learning", key: "PERSONAL GROWTH OR LEARNING", fullWidth: true },
+                        { label: "Job Summary", key: "JOD SUMMARY", fullWidth: true }
+                    ];
+
+                    trainingResponsibilityFields.forEach(field => {
+                        const val = faculty[field.key];
+                        if (val !== undefined && val !== "") {
+                            const valueFormatted = val.replace ? val.replace(/\r\n/g, '<br>') : val;
+                            html += `
+                                <div class="info-group ${field.fullWidth ? 'full-width' : ''}">
+                                    <label>${field.label}</label>
+                                    <div class="info-value">${valueFormatted}</div>
+                                </div>
+                            `;
+                        }
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    /* Work Hours Distribution Card for Training */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <h3>Work Hours Distribution</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const trainingHours = [
+                        { label: "Total Hours per Week", key: "TOTAL WORKING HOURS PER WEEK" },
+                        { label: "Teaching Hours per Week", key: "HOURS SPENT HANDLING CLASSES" },
+                        { label: "Hours for Preparation", key: "HOURS ALLOCATED FOR PREPARATION" },
+                        { label: "Hours for Self Development", key: "HOURS ALLOCATED FOR SELF-DEVELOPMENT" },
+                        { label: "Hours for Assessment and Report", key: "HOURS ALLOCATED FOR ASSESSMENT AND REPORT" }
+                    ];
+
+                    trainingHours.forEach(item => {
+                        let displayValue = faculty[item.key];
+                        if (displayValue !== undefined && displayValue !== "") {
+                            if (!isNaN(displayValue)) {
+                                displayValue += " hours";
+                            }
+                            html += `
+                                <div class="info-group">
+                                    <label>${item.label}</label>
+                                    <div class="info-value">${displayValue}</div>
+                                </div>
+                            `;
+                        }
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    html += "</div>";
+                    document.getElementById('details').innerHTML = html;
+                    return;
+                }
+
+                if (isCoe) {
+                    // Generate initials for avatar
+                    const initials = faculty["FULL NAME"]
+                        ? faculty["FULL NAME"].trim().split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()
+                        : "FC";
+
+                    let headerHtml = `
+                        <div class="profile-header">
+                            <div class="profile-avatar">${initials}</div>
+                            <div class="profile-title-area">
+                                <h1>${faculty["FULL NAME"]}</h1>
+                                <p>${faculty["DESIGNATION"] || "Faculty Member"} &bull; Center of Excellence | Raise Smart School of Technology</p>
+                            </div>
+                        </div>
+                    `;
+
+                    let html = headerHtml + '<div class="profile-grid">';
+
+                    /* General Information Card for COE */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <h3>General Information</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const coeInfoFields = [
+                        { label: "Full Name", key: "FULL NAME" },
+                        { label: "Designation", key: "DESIGNATION" },
+                        { label: "Employee ID", key: "EMPLOYEE ID" },
+                        { label: "Email", key: "EMAIL" },
+                        { label: "Phone Number", key: "PHONE NUMBER" },
+                        { label: "Date of Joining", key: "DATE OF JOINING" },
+                        { label: "Highest Qualification", key: "HIGHEST QUALIFICATION" },
+                        { label: "PhD?", key: "PhD?\r\n" },
+                        { label: "Experience inside RTC", key: "INSIDE EXPERIENCE IN YesRS", suffix: " years" },
+                        { label: "Other Experience", key: "OUTSIDE EXPERIENCE IN YesRS", suffix: " years" }
+                    ];
+
+                    coeInfoFields.forEach(field => {
+                        const val = faculty[field.key] !== undefined ? faculty[field.key] : faculty[field.key.replace('\r\n', '')];
+                        if (val !== undefined && val !== "") {
+                            let displayVal = val;
+                            if (field.suffix && !isNaN(val) && val !== "NIL" && val !== "N/A" && val !== "NA") {
+                                displayVal += field.suffix;
+                            }
+                            html += `
+                                <div class="info-group">
+                                    <label>${field.label}</label>
+                                    <div class="info-value">${displayVal}</div>
+                                </div>
+                            `;
+                        }
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    /* Training & Specialization Card for COE */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                <h3>Training & Specialization</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const coeTrainingFields = [
+                        { label: "Specialization in Last Degree", key: "YOUR SPECIALIZATION IN THE LAST DEGREE2" },
+                        { label: "Current Specialization Training", key: "IF YOU ARE TRAINING YOURSELF IN A PARTICULAR SPECIALIZATION - MENTION HERE" },
+                        { label: "List of Subjects Handled", key: "LIST OF SUBJECTS HANDLED\r\n", fullWidth: true },
+                        { label: "Courses Completed", key: "LIST OF COURSE COMPLETED2", fullWidth: true },
+                        { label: "Courses Developed", key: "COURSES DEVELOPED\\", fullWidth: true },
+                        { label: "Class Handling Sessions", key: "NUMBER OF CLASS HANDLING SESSIONS" }
+                    ];
+
+                    coeTrainingFields.forEach(field => {
+                        const val = faculty[field.key] !== undefined ? faculty[field.key] : faculty[field.key.replace('\r\n', '').replace('\\', '')];
+                        if (val !== undefined && val !== "") {
+                            const valueFormatted = val.replace ? val.replace(/\r\n/g, '<br>') : val;
+                            html += `
+                                <div class="info-group ${field.fullWidth ? 'full-width' : ''}">
+                                    <label>${field.label}</label>
+                                    <div class="info-value">${valueFormatted}</div>
+                                </div>
+                            `;
+                        }
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    /* Work Hours Distribution Card for COE */
+                    html += `
+                        <div class="profile-card">
+                            <div class="card-header">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <h3>Work Hours Distribution</h3>
+                            </div>
+                            <div class="card-body">
+                    `;
+                    const coeHours = [
+                        { label: "Total Hours per Week", key: "TOTAL HOURS PER WEEK" },
+                        { label: "Teaching Hours per Week", key: "HOURS SPENT HANDLING CLASSES" },
+                        { label: "Hours for Preparation", key: "HOURS ALLOCATED FOR PREPARATION" },
+                        { label: "Hours for Additional Responsibilities", val: 0 },
+                        { label: "Hours for Self Development", key: "HOURS ALLOCATED FOR SELF-DEVELOPMENT" }
+                    ];
+
+                    coeHours.forEach(item => {
+                        let displayValue = "";
+                        if (item.key) {
+                            const val = faculty[item.key];
+                            displayValue = val !== undefined ? val : "";
+                        } else {
+                            displayValue = item.val;
+                        }
+
+                        if (displayValue !== "" && !isNaN(displayValue)) {
+                            displayValue += " hours";
+                        }
+                        html += `
+                            <div class="info-group">
+                                <label>${item.label}</label>
+                                <div class="info-value">${displayValue}</div>
+                            </div>
+                        `;
+                    });
+                    html += `
+                            </div>
+                        </div>
+                    `;
+
+                    html += "</div>";
+                    document.getElementById('details').innerHTML = html;
+                    return;
+                }
 
                 /* Faculty Information */
                 const facultyInfoFields = [
@@ -283,11 +557,13 @@
 
                 /* Work Hours Distribution Mapping */
                 const getWorkHoursData = (fac) => {
+                    const total = fac["Total Hours per week"] !== undefined ? fac["Total Hours per week"] : fac["Total Hours per Week"];
                     const teaching = fac["Teaching Hours per week"] !== undefined ? fac["Teaching Hours per week"] : fac["Teaching Hours per Week"];
                     const prep = fac["Hours for Preparation"];
                     const admin = fac["Hours for Additional Resposibilities"] !== undefined ? fac["Hours for Additional Resposibilities"] : fac["Hours for Additional Responsibilities"];
                     const self = fac["Hours for Self Development"];
                     return [
+                        { label: "Total Hours per Week", value: total },
                         { label: "Teaching Hours per Week", value: teaching },
                         { label: "Hours for Preparation", value: prep },
                         { label: "Hours for Additional Responsibilities", value: admin },

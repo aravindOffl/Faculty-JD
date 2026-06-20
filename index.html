@@ -126,33 +126,6 @@
             transform: translateY(0);
         }
 
-        .portal-toggle-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 18px;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: #ffffff;
-            border: 1px solid transparent;
-            border-radius: 9999px;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.15);
-        }
-
-        .portal-toggle-btn:hover {
-            background: linear-gradient(135deg, #059669 0%, #047857 100%);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 14px rgba(16, 185, 129, 0.25);
-        }
-
-        .portal-toggle-btn:active {
-            transform: translateY(0);
-        }
-
         .toolbar {
             display: flex;
             gap: 16px;
@@ -555,10 +528,6 @@
             <h1>Job Directory</h1>
         </div>
         <div class="user-section">
-            <a href="coe.html" class="portal-toggle-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                COE Portal
-            </a>
             <div class="user-profile">
                 <span class="user-avatar" id="userAvatar">U</span>
                 <span class="username-display">User: <strong id="displayUsername"></strong></span>
@@ -739,9 +708,11 @@
 
         Promise.all([
             fetch("faculty.json").then(res => res.json()),
-            fetch("pdf_faculty.json").then(res => res.json())
+            fetch("pdf_faculty.json").then(res => res.json()),
+            fetch("COE.json").then(res => res.json()),
+            fetch("training.json").then(res => res.json())
         ])
-            .then(([facultyData, pdfFacultyData]) => {
+            .then(([facultyData, pdfFacultyData, coeFacultyData, trainingFacultyData]) => {
 
                 allFaculty = [];
                 const departmentsSet = new Set();
@@ -792,6 +763,46 @@
                         isPdf: true,
                         clickHandler: () => {
                             window.open(faculty.pdf, "_blank");
+                        }
+                    });
+                });
+
+                /* COE Faculty Profiles */
+                coeFacultyData.forEach((faculty, index) => {
+                    const deptName = "Center of Excellence | Raise Smart School of Technology";
+                    departmentsSet.add(deptName);
+
+                    allFaculty.push({
+                        DisplayName: faculty["FULL NAME"],
+                        Name: faculty["FULL NAME"],
+                        Designation: faculty.DESIGNATION,
+                        Department: deptName,
+                        MainDepartment: deptName,
+                        isPdf: false,
+                        clickHandler: () => {
+                            // Save selected department before navigating
+                            sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            window.location.href = `faculty.html?id=${index}&type=coe`;
+                        }
+                    });
+                });
+
+                /* Training Faculty Profiles */
+                trainingFacultyData.forEach((faculty, index) => {
+                    const deptName = "Training";
+                    departmentsSet.add(deptName);
+
+                    allFaculty.push({
+                        DisplayName: faculty["NAME"],
+                        Name: faculty["NAME"],
+                        Designation: faculty.DESIGNATION,
+                        Department: deptName,
+                        MainDepartment: deptName,
+                        isPdf: false,
+                        clickHandler: () => {
+                            // Save selected department before navigating
+                            sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            window.location.href = `faculty.html?id=${index}&type=training`;
                         }
                     });
                 });
