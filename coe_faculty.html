@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>COE Faculty Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #475569;
+            text-decoration: none;
+            border-radius: 9999px;
+            margin-bottom: 24px;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            outline: none;
+        }
+
+        .back-button:hover {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            border-color: #cbd5e1;
+            transform: translateX(-2px);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 24px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+        }
+
+        .profile-avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #047857;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.15);
+        }
+
+        .profile-title-area h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-title-area p {
+            color: #64748b;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+        }
+
+        .card-header {
+            background: #f8fafc;
+            padding: 16px 24px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #059669;
+        }
+
+        .card-header h3 {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #0f172a;
+        }
+
+        .card-body {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 24px;
+        }
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .info-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .info-group label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .profile-header {
+                padding: 16px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card-body {
+                grid-template-columns: 1fr;
+                padding: 16px;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="back-button" onclick="window.location.href='coe.html'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Back to Directory
+    </button>
+
+    <div id="details">
+        <div style="text-align: center; padding: 40px; color: #64748b; font-weight: 500;">Loading details...</div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+
+        fetch('COE.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Unable to load COE.json");
+                }
+                return response.json();
+            })
+            .then(data => {
+
+                if (!data[id]) {
+                    document.getElementById('details').innerHTML =
+                        "<p>Faculty record not found.</p>";
+                    return;
+                }
+
+                const faculty = data[id];
+
+                // Name formatting and avatar initials
+                const name = faculty["FULL NAME"] || "Unnamed Member";
+                const initials = name.trim().split(/\s+/).map(n => n[0]).join('').slice(0, 2).toUpperCase();
+
+                let headerHtml = `
+                    <div class="profile-header">
+                        <div class="profile-avatar">${initials}</div>
+                        <div class="profile-title-area">
+                            <h1>${name}</h1>
+                            <p>${faculty["DESIGNATION"] || "COE Member"} &bull; Center of Excellence</p>
+                        </div>
+                    </div>
+                `;
+
+                let html = headerHtml + '<div class="profile-grid">';
+
+                // 1. General Information Card
+                html += `
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <h3>General Information</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-group">
+                                <label>Full Name</label>
+                                <div class="info-value">${name}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Employee ID</label>
+                                <div class="info-value">${faculty["EMPLOYEE ID"] || "N/A"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Email Address</label>
+                                <div class="info-value">${faculty["EMAIL"] || "N/A"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Phone Number</label>
+                                <div class="info-value">${faculty["PHONE NUMBER"] || "N/A"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Date of Joining</label>
+                                <div class="info-value">${faculty["DATE OF JOINING"] || "N/A"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Highest Qualification</label>
+                                <div class="info-value">${faculty["HIGHEST QUALIFICATION"] || "N/A"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>PhD status</label>
+                                <div class="info-value">${faculty["PhD?\r\n"] || faculty["PhD?"] || "No"}</div>
+                            </div>
+                            <div class="info-group full-width">
+                                <label>Last Degree Specialization</label>
+                                <div class="info-value">${faculty["YOUR SPECIALIZATION IN THE LAST DEGREE2"] || "N/A"}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // 2. Experience Card
+                const insideExp = faculty["INSIDE EXPERIENCE IN YesRS"] || "0";
+                const outsideExp = faculty["OUTSIDE EXPERIENCE IN YesRS"] || "0";
+                html += `
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            <h3>Academic & Industry Experience</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-group">
+                                <label>Inside RTC / COE Experience</label>
+                                <div class="info-value">${insideExp} ${parseFloat(insideExp) === 1 ? "year" : "years"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Outside Experience</label>
+                                <div class="info-value">${outsideExp} ${parseFloat(outsideExp) === 1 ? "year" : "years"}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // 3. Subjects & Training Courses Card
+                const subjects = faculty["LIST OF SUBJECTS HANDLED\r\n"] || faculty["LIST OF SUBJECTS HANDLED"] || "NIL";
+                const subjectsFormatted = subjects.trim().replace(/\r\n/g, '<br>').replace(/\n/g, '<br>');
+
+                const coursesCompleted = faculty["LIST OF COURSE COMPLETED2"] || "NIL";
+                const coursesCompletedFormatted = coursesCompleted.trim().replace(/\r\n/g, '<br>').replace(/\n/g, '<br>');
+
+                const coursesDeveloped = faculty["COURSES DEVELOPED\\"] || faculty["COURSES DEVELOPED"] || "NIL";
+
+                const selfTraining = faculty["IF YOU ARE TRAINING YOURSELF IN A PARTICULAR SPECIALIZATION - MENTION HERE"] || "NIL";
+
+                html += `
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                            <h3>Subjects & Training Courses</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-group full-width">
+                                <label>Subjects Handled</label>
+                                <div class="info-value">${subjectsFormatted}</div>
+                            </div>
+                            <div class="info-group full-width">
+                                <label>Courses Completed</label>
+                                <div class="info-value">${coursesCompletedFormatted}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Courses Developed</label>
+                                <div class="info-value">${coursesDeveloped}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Specialization Training / Focus</label>
+                                <div class="info-value">${selfTraining}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // 4. Work Hours Distribution Card
+                const classSessions = faculty["NUMBER OF CLASS HANDLING SESSIONS"] || "N/A";
+                const spentHandling = faculty["HOURS SPENT HANDLING CLASSES"] || "0";
+                const prepHours = faculty["HOURS ALLOCATED FOR PREPARATION"] || "0";
+                const selfDevHours = faculty["HOURS ALLOCATED FOR SELF-DEVELOPMENT"] || "0";
+
+                html += `
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <h3>Work Hours Distribution</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-group">
+                                <label>Class Handling Sessions</label>
+                                <div class="info-value">${classSessions}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Teaching / Class Hours per Week</label>
+                                <div class="info-value">${spentHandling} ${parseFloat(spentHandling) === 1 ? "hour" : "hours"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Hours for Preparation</label>
+                                <div class="info-value">${prepHours} ${parseFloat(prepHours) === 1 ? "hour" : "hours"}</div>
+                            </div>
+                            <div class="info-group">
+                                <label>Hours for Self Development</label>
+                                <div class="info-value">${selfDevHours} ${parseFloat(selfDevHours) === 1 ? "hour" : "hours"}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                html += "</div>";
+
+                document.getElementById('details').innerHTML = html;
+            })
+            .catch(error => {
+                console.error(error);
+                document.getElementById('details').innerHTML =
+                    "<p>Error loading COE faculty details.</p>";
+            });
+    </script>
+
+</body>
+
+</html>

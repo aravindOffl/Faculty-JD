@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty List</title>
+    <title>COE Department Directory</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
@@ -49,12 +49,12 @@
             width: 40px;
             height: 40px;
             border-radius: 10px;
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
         }
 
         .header h1 {
@@ -71,6 +71,33 @@
             gap: 16px;
         }
 
+        .portal-toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: #ffffff;
+            border: 1px solid transparent;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.15);
+        }
+
+        .portal-toggle-btn:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(79, 70, 229, 0.25);
+        }
+
+        .portal-toggle-btn:active {
+            transform: translateY(0);
+        }
+
         .user-profile {
             display: flex;
             align-items: center;
@@ -85,7 +112,7 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            background: #4f46e5;
+            background: #10b981;
             color: white;
             font-size: 11px;
             font-weight: 700;
@@ -123,33 +150,6 @@
         }
 
         .logout-btn:active {
-            transform: translateY(0);
-        }
-
-        .portal-toggle-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 18px;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: #ffffff;
-            border: 1px solid transparent;
-            border-radius: 9999px;
-            cursor: pointer;
-            font-size: 13px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.15);
-        }
-
-        .portal-toggle-btn:hover {
-            background: linear-gradient(135deg, #059669 0%, #047857 100%);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 14px rgba(16, 185, 129, 0.25);
-        }
-
-        .portal-toggle-btn:active {
             transform: translateY(0);
         }
 
@@ -192,8 +192,8 @@
         }
 
         .search-wrapper input:focus {
-            border-color: #6366f1;
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
         }
 
         .sort-wrapper {
@@ -219,8 +219,8 @@
         }
 
         .sort-wrapper select:focus {
-            border-color: #6366f1;
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
         }
 
         .select-icon {
@@ -283,10 +283,10 @@
         }
 
         .dept-btn.active {
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: #ffffff;
             border-color: transparent;
-            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
         }
 
         #facultyList {
@@ -330,14 +330,14 @@
             left: 0;
             width: 4px;
             height: 100%;
-            background: linear-gradient(to bottom, #6366f1, #4f46e5);
+            background: linear-gradient(to bottom, #10b981, #059669);
             transition: all 0.3s ease;
         }
 
         .faculty-card:hover {
             transform: translateY(-4px);
             border-color: #cbd5e1;
-            box-shadow: 0 12px 20px -8px rgba(99, 102, 241, 0.12), 0 4px 12px -2px rgba(99, 102, 241, 0.04);
+            box-shadow: 0 12px 20px -8px rgba(16, 185, 129, 0.12), 0 4px 12px -2px rgba(16, 185, 129, 0.04);
         }
 
         .faculty-card:hover::before {
@@ -348,8 +348,8 @@
             width: 52px;
             height: 52px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-            color: #4f46e5;
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #047857;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -396,9 +396,9 @@
             letter-spacing: 0.2px;
         }
 
-        .pdf-badge {
-            background-color: #fef2f2;
-            color: #ef4444;
+        .email-badge {
+            background-color: #ecfdf5;
+            color: #047857;
             padding: 4px 10px;
             border-radius: 9999px;
             font-size: 11px;
@@ -406,6 +406,10 @@
             display: inline-flex;
             align-items: center;
             gap: 4px;
+            max-width: 180px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .arrow-indicator {
@@ -418,7 +422,7 @@
         }
 
         .faculty-card:hover .arrow-indicator {
-            color: #4f46e5;
+            color: #059669;
             transform: translateX(4px);
         }
 
@@ -532,15 +536,19 @@
         .suggestion-dept {
             font-size: 11px;
             font-weight: 600;
-            background: #f1f5f9;
-            color: #64748b;
+            background: #ecfdf5;
+            color: #047857;
             padding: 2px 8px;
             border-radius: 9999px;
+            max-width: 160px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .suggestion-item:hover .suggestion-dept {
-            background: #e2e8f0;
-            color: #475569;
+            background: #d1fae5;
+            color: #065f46;
         }
     </style>
 </head>
@@ -552,15 +560,15 @@
             <div class="logo-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
             </div>
-            <h1>Job Directory</h1>
+            <h1>COE Directory</h1>
         </div>
         <div class="user-section">
-            <a href="coe.html" class="portal-toggle-btn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                COE Portal
+            <a href="index.html" class="portal-toggle-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                Faculty Portal
             </a>
             <div class="user-profile">
-                <span class="user-avatar" id="userAvatar">U</span>
+                <span class="user-avatar" id="userAvatar">A</span>
                 <span class="username-display">User: <strong id="displayUsername"></strong></span>
             </div>
             <button class="logout-btn" id="logoutBtn">
@@ -575,7 +583,7 @@
             <div class="search-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </div>
-            <input type="text" id="searchBox" placeholder="Search faculty by name..." autocomplete="off">
+            <input type="text" id="searchBox" placeholder="Search COE faculty by name..." autocomplete="off">
             <div id="searchSuggestions" class="search-suggestions-dropdown"></div>
         </div>
 
@@ -593,65 +601,83 @@
     <div class="dept-container">
         <div class="dept-title">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
-            Filter by Department
+            Filter by Role / Designation
         </div>
-        <div id="departmentButtons" class="dept-buttons-grid"></div>
+        <div id="roleButtons" class="dept-buttons-grid"></div>
     </div>
 
     <div id="facultyList">Loading...</div>
 
     <script>
-
         // ===== AUTHENTICATION CHECK =====
         function checkAuthentication() {
             if (!sessionStorage.getItem("isAuthenticated")) {
-                // Redirect to login page if not authenticated
                 window.location.href = "auth.html";
                 return false;
             }
             return true;
         }
 
-        // Check authentication on page load
         if (!checkAuthentication()) {
             throw new Error("Redirecting to authentication page...");
         }
 
-        // Display username & user avatar initial
         const username = sessionStorage.getItem("username");
         document.getElementById("displayUsername").textContent = username || "User";
-        const initial = (username ? username.charAt(0) : "U").toUpperCase();
+        const initial = (username ? username.charAt(0) : "A").toUpperCase();
         document.getElementById("userAvatar").textContent = initial;
 
-        // Logout functionality
+        // Logout
         document.getElementById("logoutBtn").addEventListener("click", function () {
-            // Clear session storage
             sessionStorage.removeItem("isAuthenticated");
             sessionStorage.removeItem("username");
-
-            // Redirect to login page
             window.location.href = "auth.html";
         });
 
-        // (Change password feature removed)
-
-        // ===== FACULTY LIST CODE =====
-
+        // ===== COE LIST CODE =====
         const facultyList = document.getElementById("facultyList");
         const sortOrder = document.getElementById("sortOrder");
         const searchBox = document.getElementById("searchBox");
+        const roleButtonsContainer = document.getElementById("roleButtons");
 
-        let allFaculty = [];
-        let activeDepartment = "";
+        let allCOE = [];
+        let activeRoleCategory = "";
+
+        const rolesList = [
+            "All Roles",
+            "Technical Trainer",
+            "Assistant Professor",
+            "Soft Skill Trainer",
+            "Student Success Officer",
+            "Others"
+        ];
+
+        function getRoleCategory(designation) {
+            if (!designation) return "Others";
+            const d = designation.trim().toUpperCase();
+            if (d.includes("TECHNICAL TRAINER") || d.includes("PLACEMENT PROGRAMMING TRAINER")) {
+                return "Technical Trainer";
+            }
+            if (d.includes("ASSISTANT PROFESSOR") || d.includes("ASST.PROFFESSOR") || d.includes("ASSOCIATE PROFESSOR")) {
+                return "Assistant Professor";
+            }
+            if (d.includes("SOFT SKILL")) {
+                return "Soft Skill Trainer";
+            }
+            if (d.includes("STUDENT SUCCESS")) {
+                return "Student Success Officer";
+            }
+            return "Others";
+        }
 
         function createFacultyCard(faculty, idx) {
             const card = document.createElement("div");
             card.className = "faculty-card";
             card.style.animationDelay = `${idx * 0.03}s`;
 
-            // Generate initials for avatar
             const initials = faculty.DisplayName
-                .split(' ')
+                .trim()
+                .split(/\s+/)
                 .map(n => n[0])
                 .join('')
                 .slice(0, 2)
@@ -661,10 +687,10 @@
                 <div class="faculty-avatar">${initials}</div>
                 <div class="faculty-info">
                     <h3>${faculty.DisplayName}</h3>
-                    <p class="designation">${faculty.Designation || "Faculty Member"}</p>
+                    <p class="designation">${faculty.Designation || "COE Member"}</p>
                     <div class="card-badges">
-                        <span class="dept-badge">${faculty.Department}</span>
-                        ${faculty.isPdf ? '<span class="pdf-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> PDF Profile</span>' : ''}
+                        <span class="dept-badge">${faculty.RoleCategory}</span>
+                        ${faculty.Email ? `<span class="email-badge" title="${faculty.Email}">${faculty.Email}</span>` : ''}
                     </div>
                 </div>
                 <div class="arrow-indicator">
@@ -672,56 +698,42 @@
                 </div>
             `;
 
-            card.addEventListener("click", faculty.clickHandler);
+            card.addEventListener("click", () => {
+                sessionStorage.setItem('selectedCOERole', activeRoleCategory);
+                window.location.href = `coe_faculty.html?id=${faculty.OriginalIndex}`;
+            });
 
             facultyList.appendChild(card);
         }
 
         function renderFacultyList() {
-
             facultyList.innerHTML = "";
-
-            let filteredFaculty = [...allFaculty];
+            let filtered = [...allCOE];
 
             const searchText = searchBox.value.trim().toLowerCase();
 
-            /* Search Filter */
+            // Search
             if (searchText !== "") {
-                filteredFaculty = filteredFaculty.filter(faculty =>
-                    faculty.DisplayName.toLowerCase().includes(searchText)
-                );
+                filtered = filtered.filter(f => f.DisplayName.toLowerCase().includes(searchText));
             }
 
-            /* Department Filter */
-            const selectedDepartment = activeDepartment;
-            if (selectedDepartment !== "") {
-                filteredFaculty = filteredFaculty.filter(faculty => {
-                    // For S&H, match main department only
-                    if (selectedDepartment === "S&H") {
-                        const mainDept = faculty.Department.split(' (')[0];
-                        return mainDept === "S&H";
-                    }
-                    // For other departments (including CSE variants), match full department
-                    return faculty.Department === selectedDepartment;
-                });
+            // Role Category Filter
+            if (activeRoleCategory !== "" && activeRoleCategory !== "All Roles") {
+                filtered = filtered.filter(f => f.RoleCategory === activeRoleCategory);
             }
 
-            /* Sorting */
-            filteredFaculty.sort((a, b) => {
-
+            // Sorting
+            filtered.sort((a, b) => {
                 const nameA = a.DisplayName.toUpperCase();
                 const nameB = b.DisplayName.toUpperCase();
-
                 if (sortOrder.value === "asc") {
                     return nameA.localeCompare(nameB);
                 } else {
                     return nameB.localeCompare(nameA);
                 }
-
             });
 
-            /* No Results */
-            if (filteredFaculty.length === 0) {
+            if (filtered.length === 0) {
                 facultyList.innerHTML = `
                     <div class="no-results">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
@@ -731,136 +743,33 @@
                 return;
             }
 
-            /* Display Cards */
-            filteredFaculty.forEach((faculty, idx) => {
+            filtered.forEach((faculty, idx) => {
                 createFacultyCard(faculty, idx);
             });
         }
 
-        Promise.all([
-            fetch("faculty.json").then(res => res.json()),
-            fetch("pdf_faculty.json").then(res => res.json())
-        ])
-            .then(([facultyData, pdfFacultyData]) => {
-
-                allFaculty = [];
-                const departmentsSet = new Set();
-
-                /* Normal Faculty Profiles */
-                facultyData.forEach((faculty, index) => {
-                    const mainDept = faculty.Department.split(' (')[0];
-                    // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
-                    // For S&H, we'll handle it specially in the dropdown
-                    if (mainDept === "S&H") {
-                        departmentsSet.add("S&H");
-                    } else {
-                        departmentsSet.add(faculty.Department);
-                    }
-
-                    allFaculty.push({
-                        DisplayName: faculty["Name of the faculty"] || faculty.Name,
-                        Name: faculty.Name,
-                        Designation: faculty.Designation,
-                        Department: faculty.Department,
-                        MainDepartment: mainDept,
-                        isPdf: false,
-                        clickHandler: () => {
-                            // Save selected department before navigating
-                            sessionStorage.setItem('selectedDepartment', activeDepartment);
-                            window.location.href = `faculty.html?id=${index}`;
-                        }
-                    });
+        function populateRoleButtons() {
+            roleButtonsContainer.innerHTML = "";
+            rolesList.forEach(role => {
+                const btn = document.createElement("button");
+                btn.type = "button";
+                btn.className = "dept-btn" + ((activeRoleCategory === role || (activeRoleCategory === "" && role === "All Roles")) ? " active" : "");
+                btn.textContent = role;
+                btn.addEventListener("click", () => {
+                    setActiveRole(role === "All Roles" ? "" : role);
                 });
-
-                /* PDF Faculty Profiles */
-                pdfFacultyData.forEach((faculty) => {
-                    const mainDept = faculty.Department.split(' (')[0];
-                    // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
-                    // For S&H, we'll handle it specially in the dropdown
-                    if (mainDept === "S&H") {
-                        departmentsSet.add("S&H");
-                    } else {
-                        departmentsSet.add(faculty.Department);
-                    }
-
-                    allFaculty.push({
-                        DisplayName: faculty["Name of the faculty"] || faculty.Name,
-                        Name: faculty.Name,
-                        Designation: faculty.Designation,
-                        Department: faculty.Department,
-                        MainDepartment: mainDept,
-                        isPdf: true,
-                        clickHandler: () => {
-                            window.open(faculty.pdf, "_blank");
-                        }
-                    });
-                });
-
-                // Populate department buttons
-                const departmentButtonsContainer = document.getElementById("departmentButtons");
-                const uniqueDepts = Array.from(departmentsSet).sort();
-
-                function updateDepartmentButtons() {
-                    departmentButtonsContainer.innerHTML = "";
-
-                    // "All Departments" button
-                    const allBtn = document.createElement("button");
-                    allBtn.type = "button";
-                    allBtn.className = "dept-btn" + (activeDepartment === "" ? " active" : "");
-                    allBtn.textContent = "All Departments";
-                    allBtn.addEventListener("click", () => {
-                        setActiveDepartment("");
-                    });
-                    departmentButtonsContainer.appendChild(allBtn);
-
-                    uniqueDepts.forEach(dept => {
-                        const btn = document.createElement("button");
-                        btn.type = "button";
-                        btn.className = "dept-btn" + (activeDepartment === dept ? " active" : "");
-                        btn.textContent = dept;
-                        btn.addEventListener("click", () => {
-                            setActiveDepartment(dept);
-                        });
-                        departmentButtonsContainer.appendChild(btn);
-                    });
-                }
-
-                // Restore selected department from sessionStorage
-                const savedDepartment = sessionStorage.getItem('selectedDepartment');
-                if (savedDepartment) {
-                    activeDepartment = savedDepartment;
-                    sessionStorage.removeItem('selectedDepartment');
-                }
-
-                updateDepartmentButtons();
-
-                renderFacultyList();
-
-            })
-            .catch(error => {
-
-                console.error("Error loading faculty data:", error);
-
-                facultyList.innerHTML = `
-                <div class="no-results" style="color:red;">
-                    Unable to load faculty data.
-                </div>
-            `;
+                roleButtonsContainer.appendChild(btn);
             });
+        }
 
-        /* Event Listeners */
-        sortOrder.addEventListener("change", renderFacultyList);
-        searchBox.addEventListener("input", renderFacultyList);
+        function setActiveRole(role) {
+            activeRoleCategory = role;
+            sessionStorage.setItem('lastSelectedCOERole', role);
 
-        function setActiveDepartment(dept) {
-            activeDepartment = dept;
-            sessionStorage.setItem('lastSelectedDepartment', dept);
-
-            // Update active styling
             const buttons = document.querySelectorAll(".dept-btn");
             buttons.forEach(btn => {
-                const isAllBtn = btn.textContent === "All Departments";
-                if ((isAllBtn && dept === "") || (!isAllBtn && btn.textContent === dept)) {
+                const isAllBtn = btn.textContent === "All Roles";
+                if ((isAllBtn && role === "") || (!isAllBtn && btn.textContent === role)) {
                     btn.classList.add("active");
                 } else {
                     btn.classList.remove("active");
@@ -868,15 +777,49 @@
             });
 
             renderFacultyList();
-
-            // Smooth scroll to faculty list
             facultyList.scrollIntoView({ behavior: "smooth", block: "start" });
         }
 
-        // ===== SEARCH AUTOCOMPLETE SUGGESTIONS =====
+        // Fetch COE Data
+        fetch("COE.json")
+            .then(res => res.json())
+            .then(data => {
+                allCOE = data.map((item, index) => {
+                    return {
+                        OriginalIndex: index,
+                        DisplayName: item["FULL NAME"] || "Unnamed Member",
+                        Designation: item["DESIGNATION"] || "COE Member",
+                        Email: item["EMAIL"],
+                        RoleCategory: getRoleCategory(item["DESIGNATION"])
+                    };
+                });
+
+                // Restore last selected role filter
+                const savedRole = sessionStorage.getItem('selectedCOERole') || sessionStorage.getItem('lastSelectedCOERole');
+                if (savedRole) {
+                    activeRoleCategory = savedRole === "All Roles" ? "" : savedRole;
+                    sessionStorage.removeItem('selectedCOERole'); // Clear one-time return filter
+                }
+
+                populateRoleButtons();
+                renderFacultyList();
+            })
+            .catch(error => {
+                console.error("Error loading COE data:", error);
+                facultyList.innerHTML = `
+                    <div class="no-results" style="color:red;">
+                        Unable to load COE data.
+                    </div>
+                `;
+            });
+
+        sortOrder.addEventListener("change", renderFacultyList);
+        searchBox.addEventListener("input", renderFacultyList);
+
+        // ===== AUTOCOMPLETE SUGGESTIONS =====
         const searchSuggestions = document.getElementById("searchSuggestions");
 
-        searchBox.addEventListener("input", function() {
+        searchBox.addEventListener("input", function () {
             const query = this.value.trim().toLowerCase();
             if (query === "") {
                 searchSuggestions.innerHTML = "";
@@ -884,10 +827,9 @@
                 return;
             }
 
-            // Filter all faculty by name
-            const matches = allFaculty.filter(faculty => 
-                faculty.DisplayName.toLowerCase().includes(query)
-            ).slice(0, 8); // limit suggestions for clean view
+            const matches = allCOE.filter(f => 
+                f.DisplayName.toLowerCase().includes(query)
+            ).slice(0, 8);
 
             if (matches.length === 0) {
                 searchSuggestions.innerHTML = '<div style="padding: 14px; text-align: center; color: #64748b; font-size: 13px; font-weight: 500;">No matches found</div>';
@@ -901,32 +843,31 @@
                 item.className = "suggestion-item";
                 item.innerHTML = `
                     <span class="suggestion-name">${faculty.DisplayName}</span>
-                    <span class="suggestion-dept">${faculty.Department}</span>
+                    <span class="suggestion-dept">${faculty.Designation}</span>
                 `;
-                item.addEventListener("click", function() {
-                    // Update search box
+                item.addEventListener("click", function () {
                     searchBox.value = faculty.DisplayName;
                     searchSuggestions.style.display = "none";
                     searchSuggestions.innerHTML = "";
 
-                    // Reset department filter if matching faculty is not in the active department
-                    if (activeDepartment !== "" && faculty.Department !== activeDepartment && !(activeDepartment === "S&H" && faculty.Department.startsWith("S&H"))) {
-                        setActiveDepartment("");
+                    // Reset role filter if mismatch
+                    if (activeRoleCategory !== "" && faculty.RoleCategory !== activeRoleCategory) {
+                        setActiveRole("");
                     } else {
                         renderFacultyList();
                     }
 
-                    // Find and scroll to the card
+                    // Find and scroll
                     setTimeout(() => {
-                        const targetCard = Array.from(document.querySelectorAll(".faculty-card")).find(card => 
+                        const cards = Array.from(document.querySelectorAll(".faculty-card"));
+                        const targetCard = cards.find(card => 
                             card.querySelector("h3").textContent === faculty.DisplayName
                         );
                         if (targetCard) {
                             targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
-                            // Highlight the card briefly
                             targetCard.style.transition = "all 0.3s ease";
-                            targetCard.style.borderColor = "#6366f1";
-                            targetCard.style.boxShadow = "0 0 0 4px rgba(99, 102, 241, 0.2)";
+                            targetCard.style.borderColor = "#10b981";
+                            targetCard.style.boxShadow = "0 0 0 4px rgba(16, 185, 129, 0.2)";
                             setTimeout(() => {
                                 targetCard.style.borderColor = "";
                                 targetCard.style.boxShadow = "";
@@ -939,22 +880,18 @@
             searchSuggestions.style.display = "block";
         });
 
-        // Hide suggestions when clicking outside
-        document.addEventListener("click", function(e) {
+        document.addEventListener("click", function (e) {
             if (!searchBox.contains(e.target) && !searchSuggestions.contains(e.target)) {
                 searchSuggestions.style.display = "none";
             }
         });
 
-        // Re-show suggestions on focus if there's text
-        searchBox.addEventListener("focus", function() {
+        searchBox.addEventListener("focus", function () {
             if (this.value.trim() !== "") {
                 searchSuggestions.style.display = "block";
             }
         });
-
     </script>
-
 </body>
 
 </html>
