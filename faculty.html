@@ -207,6 +207,64 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .card-body-hours {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .hour-circle-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+            background: #ffffff;
+            padding: 16px 12px;
+            border-radius: 16px;
+            border: 1px solid #f1f5f9;
+            width: 100%;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hour-circle-item:hover {
+            transform: translateY(-2px);
+            border-color: #cbd5e1;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.02), 0 4px 6px -2px rgba(0, 0, 0, 0.01);
+        }
+
+        .circle-svg-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .progress-ring-fill {
+            transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hour-circle-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .hour-circle-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #475569;
+            line-height: 1.4;
+        }
+
+        .hour-circle-pct {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.2px;
+        }
     </style>
 </head>
 <body>
@@ -221,6 +279,52 @@
     </div>
 
     <script>
+        const generateWorkHoursCard = (total, items) => {
+            const totalNum = parseFloat(total) || 42;
+            let cardHtml = `
+                <div class="profile-card">
+                    <div class="card-header">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <h3>Work Hours Distribution (Total: ${totalNum} hrs/week)</h3>
+                    </div>
+                    <div class="card-body-hours">
+            `;
+
+            items.forEach(item => {
+                const valueNum = parseFloat(item.value) || 0;
+                const pct = totalNum > 0 ? Math.min(100, Math.max(0, (valueNum / totalNum) * 100)) : 0;
+                
+                const c = 201.06;
+                const offset = c * (1 - pct / 100);
+                
+                const strokeColor = item.color || "#6366f1";
+                
+                cardHtml += `
+                    <div class="hour-circle-item">
+                        <div class="circle-svg-wrapper">
+                            <svg width="84" height="84" viewBox="0 0 84 84" class="progress-ring">
+                                <circle cx="42" cy="42" r="32" class="progress-ring-bg" stroke="#f8fafc" stroke-width="6" fill="transparent"></circle>
+                                <circle cx="42" cy="42" r="32" class="progress-ring-fill" stroke="${strokeColor}" stroke-width="6" fill="transparent"
+                                        stroke-dasharray="${c}" stroke-dashoffset="${offset}" stroke-linecap="round"
+                                        transform="rotate(-90 42 42)"></circle>
+                                <text x="50%" y="50%" text-anchor="middle" dy=".3em" class="progress-ring-text" font-size="13" font-weight="800" fill="#1e293b">${valueNum}</text>
+                            </svg>
+                        </div>
+                        <div class="hour-circle-info">
+                            <span class="hour-circle-label">${item.label}</span>
+                            <span class="hour-circle-pct" style="color: ${strokeColor}">${pct.toFixed(1)}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cardHtml += `
+                    </div>
+                </div>
+            `;
+            return cardHtml;
+        };
+
         const params = new URLSearchParams(window.location.search);
         const id = params.get('id');
         const type = params.get('type');
@@ -334,40 +438,14 @@
                     `;
 
                     /* Work Hours Distribution Card for Training */
-                    html += `
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <h3>Work Hours Distribution</h3>
-                            </div>
-                            <div class="card-body">
-                    `;
-                    const trainingHours = [
-                        { label: "Total Hours per Week", key: "TOTAL WORKING HOURS PER WEEK" },
-                        { label: "Teaching Hours per Week", key: "HOURS SPENT HANDLING CLASSES" },
-                        { label: "Hours for Preparation", key: "HOURS ALLOCATED FOR PREPARATION" },
-                        { label: "Hours for Self Development", key: "HOURS ALLOCATED FOR SELF-DEVELOPMENT" },
-                        { label: "Hours for Assessment and Report", key: "HOURS ALLOCATED FOR ASSESSMENT AND REPORT" }
+                    const totalHours = faculty["TOTAL WORKING HOURS PER WEEK"] || 42;
+                    const items = [
+                        { label: "Teaching Hours per Week", value: faculty["HOURS SPENT HANDLING CLASSES"] || 0, color: "#6366f1" },
+                        { label: "Hours for Preparation", value: faculty["HOURS ALLOCATED FOR PREPARATION"] || 0, color: "#10b981" },
+                        { label: "Hours for Self Development", value: faculty["HOURS ALLOCATED FOR SELF-DEVELOPMENT"] || 0, color: "#f43f5e" },
+                        { label: "Hours for Assessment and Report", value: faculty["HOURS ALLOCATED FOR ASSESSMENT AND REPORT"] || 0, color: "#8b5cf6" }
                     ];
-
-                    trainingHours.forEach(item => {
-                        let displayValue = faculty[item.key];
-                        if (displayValue !== undefined && displayValue !== "") {
-                            if (!isNaN(displayValue)) {
-                                displayValue += " hours";
-                            }
-                            html += `
-                                <div class="info-group">
-                                    <label>${item.label}</label>
-                                    <div class="info-value">${displayValue}</div>
-                                </div>
-                            `;
-                        }
-                    });
-                    html += `
-                            </div>
-                        </div>
-                    `;
+                    html += generateWorkHoursCard(totalHours, items);
 
                     html += "</div>";
                     document.getElementById('details').innerHTML = html;
@@ -470,45 +548,14 @@
                     `;
 
                     /* Work Hours Distribution Card for COE */
-                    html += `
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <h3>Work Hours Distribution</h3>
-                            </div>
-                            <div class="card-body">
-                    `;
-                    const coeHours = [
-                        { label: "Total Hours per Week", key: "TOTAL HOURS PER WEEK" },
-                        { label: "Teaching Hours per Week", key: "HOURS SPENT HANDLING CLASSES" },
-                        { label: "Hours for Preparation", key: "HOURS ALLOCATED FOR PREPARATION" },
-                        { label: "Hours for Additional Responsibilities", val: 0 },
-                        { label: "Hours for Self Development", key: "HOURS ALLOCATED FOR SELF-DEVELOPMENT" }
+                    const totalHours = faculty["TOTAL HOURS PER WEEK"] || 42;
+                    const items = [
+                        { label: "Teaching Hours per Week", value: faculty["HOURS SPENT HANDLING CLASSES"] || 0, color: "#6366f1" },
+                        { label: "Hours for Preparation", value: faculty["HOURS ALLOCATED FOR PREPARATION"] || 0, color: "#10b981" },
+                        { label: "Hours for Additional Responsibilities", value: 0, color: "#f59e0b" },
+                        { label: "Hours for Self Development", value: faculty["HOURS ALLOCATED FOR SELF-DEVELOPMENT"] || 0, color: "#f43f5e" }
                     ];
-
-                    coeHours.forEach(item => {
-                        let displayValue = "";
-                        if (item.key) {
-                            const val = faculty[item.key];
-                            displayValue = val !== undefined ? val : "";
-                        } else {
-                            displayValue = item.val;
-                        }
-
-                        if (displayValue !== "" && !isNaN(displayValue)) {
-                            displayValue += " hours";
-                        }
-                        html += `
-                            <div class="info-group">
-                                <label>${item.label}</label>
-                                <div class="info-value">${displayValue}</div>
-                            </div>
-                        `;
-                    });
-                    html += `
-                            </div>
-                        </div>
-                    `;
+                    html += generateWorkHoursCard(totalHours, items);
 
                     html += "</div>";
                     document.getElementById('details').innerHTML = html;
@@ -672,35 +719,22 @@
                 `;
 
                 /* Work Hours Distribution */
-                const workHoursData = getWorkHoursData(faculty);
-                const hasWorkHours = workHoursData.some(item => item.value !== undefined);
+                const totalHours = faculty["Total Hours per week"] !== undefined ? faculty["Total Hours per week"] : faculty["Total Hours per Week"];
+                const teaching = faculty["Teaching Hours per week"] !== undefined ? faculty["Teaching Hours per week"] : faculty["Teaching Hours per Week"];
+                const prep = faculty["Hours for Preparation"];
+                const admin = faculty["Hours for Additional Resposibilities"] !== undefined ? faculty["Hours for Additional Resposibilities"] : faculty["Hours for Additional Responsibilities"];
+                const self = faculty["Hours for Self Development"];
+
+                const hasWorkHours = totalHours !== undefined || teaching !== undefined || prep !== undefined || admin !== undefined || self !== undefined;
                 if (hasWorkHours) {
-                    html += `
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <h3>Work Hours Distribution</h3>
-                            </div>
-                            <div class="card-body">
-                    `;
-                    workHoursData.forEach(item => {
-                        if (item.value !== undefined) {
-                            let displayValue = item.value;
-                            if (displayValue !== "" && !isNaN(displayValue)) {
-                                displayValue += " hours";
-                            }
-                            html += `
-                                <div class="info-group">
-                                    <label>${item.label}</label>
-                                    <div class="info-value">${displayValue}</div>
-                                </div>
-                            `;
-                        }
-                    });
-                    html += `
-                            </div>
-                        </div>
-                    `;
+                    const totalNum = parseFloat(totalHours) || 42;
+                    const items = [
+                        { label: "Teaching Hours per Week", value: teaching || 0, color: "#6366f1" },
+                        { label: "Hours for Preparation", value: prep || 0, color: "#10b981" },
+                        { label: "Hours for Additional Responsibilities", value: admin || 0, color: "#f59e0b" },
+                        { label: "Hours for Self Development", value: self || 0, color: "#f43f5e" }
+                    ];
+                    html += generateWorkHoursCard(totalNum, items);
                 }
 
                 /* Administrative and Institutional Responsibilities */
