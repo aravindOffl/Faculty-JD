@@ -359,6 +359,41 @@
             flex-wrap: wrap;
         }
 
+        .card-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            background: #f8fafc;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid #f1f5f9;
+            width: 100%;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .stat-lbl {
+            font-size: 9px;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            margin-bottom: 2px;
+        }
+
+        .stat-val {
+            font-size: 11px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
         .dept-badge {
             background-color: #f1f5f9;
             color: #475569;
@@ -631,6 +666,26 @@
                 <div class="faculty-info">
                     <h3>${faculty.DisplayName}</h3>
                     <p class="designation">${faculty.Designation || "Faculty Member"}</p>
+                    ${!faculty.isPdf && faculty.teachingHours !== undefined ? `
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-lbl">Teaching</span>
+                            <span class="stat-val">${faculty.teachingHours}h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-lbl">Prep</span>
+                            <span class="stat-val">${faculty.prepHours}h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-lbl">Admin</span>
+                            <span class="stat-val">${faculty.adminHours}h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-lbl">Self Dev</span>
+                            <span class="stat-val">${faculty.selfDevHours}h</span>
+                        </div>
+                    </div>
+                    ` : ''}
                     <div class="card-badges">
                         <span class="dept-badge">${faculty.Department}</span>
                         ${faculty.isPdf ? '<span class="pdf-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> PDF Profile</span>' : ''}
@@ -733,6 +788,10 @@
                         Department: faculty.Department,
                         MainDepartment: mainDept,
                         isPdf: false,
+                        teachingHours: faculty["Teaching Hours per week"],
+                        prepHours: faculty["Hours for Preparation"],
+                        adminHours: faculty["Hours for Additional Resposibilities"],
+                        selfDevHours: faculty["Hours for Self Development"],
                         clickHandler: () => {
                             // Save selected department before navigating
                             sessionStorage.setItem('selectedDepartment', activeDepartment);
