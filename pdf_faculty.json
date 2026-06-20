@@ -1,7 +1,7 @@
 [
     {
         "Name": "Dr.CP Thamil Selvi",
-        "Designation": "Head – Digital Learning & Professional Bodies (DL&PB)",
+        "Designation": "Head \u2013 Digital Learning & Professional Bodies (DL&PB)",
         "pdf": "pdf profile/Dr.CP Thamil Selvi.pdf",
         "Department": "Principal Office"
     },
@@ -19,13 +19,13 @@
     },
     {
         "Name": "Dr.Vinodh S",
-        "Designation": "Coordinator – IQAC",
+        "Designation": "Coordinator \u2013 IQAC",
         "pdf": "pdf profile/Dr.Vinodh S.pdf",
         "Department": "IQAC"
     },
     {
         "Name": "Mr.Clement M",
-        "Designation": "Assistant Director – IQAC",
+        "Designation": "Assistant Director \u2013 IQAC",
         "pdf": "pdf profile/Mr.Clement M.pdf",
         "Department": "IQAC"
     },
@@ -121,13 +121,13 @@
     },
     {
         "Name": "Ms.M.Santhiyaa",
-        "Designation": "Office Assistant – Digital Learning and Professional Bodies",
+        "Designation": "Office Assistant \u2013 Digital Learning and Professional Bodies",
         "pdf": "pdf profile/Ms.M.Santhiyaa.pdf",
         "Department": "Principal Office"
     },
     {
         "Name": "Ms.Priyadharshini U",
-        "Designation": "Assistant Coordinator – IQAC",
+        "Designation": "Assistant Coordinator \u2013 IQAC",
         "pdf": "pdf profile/Ms.Priyadharshini U.pdf",
         "Department": "IQAC"
     },
@@ -139,13 +139,13 @@
     },
     {
         "Name": "Ms.Shobhna E",
-        "Designation": "Associate Executive – IQAC",
+        "Designation": "Associate Executive \u2013 IQAC",
         "pdf": "pdf profile/Ms.Shobhna E.pdf",
         "Department": "IQAC"
     },
     {
         "Name": "Ms.Sornamari N",
-        "Designation": "Assistant Coordinator – IQAC",
+        "Designation": "Assistant Coordinator \u2013 IQAC",
         "pdf": "pdf profile/Ms.Sornamari N.pdf",
         "Department": "IQAC"
     },
@@ -157,7 +157,7 @@
     },
     {
         "Name": "Ms.Thaya Nandhini P",
-        "Designation": "Assistant Coordinator – IQAC",
+        "Designation": "Assistant Coordinator \u2013 IQAC",
         "pdf": "pdf profile/Ms.Thaya Nandhini P.pdf",
         "Department": "IQAC"
     },
@@ -235,7 +235,7 @@
     },
     {
         "Name": "Mr.Gajendran Parthasarathi",
-        "Designation": "Head – School of Design and Innovation",
+        "Designation": "Head \u2013 School of Design and Innovation",
         "pdf": "pdf profile/Mr Gajendran Parthasarathi JD.pdf",
         "Department": "Experiential Learning"
     },
@@ -247,7 +247,7 @@
     },
     {
         "Name": "Mr.Muthusamy K",
-        "Designation": "Head – Technical Competitions and Hackathons",
+        "Designation": "Head \u2013 Technical Competitions and Hackathons",
         "pdf": "pdf profile/Mr Muthusamy JD.pdf",
         "Department": "Experiential Learning"
     },
@@ -283,7 +283,7 @@
     },
     {
         "Name": "Dr.K.Geetha",
-        "Designation": "Principal – Administration",
+        "Designation": "Principal \u2013 Administration",
         "pdf": "pdf profile/Dr.K.Geetha.pdf",
         "Department": "Principal Office"
     },
@@ -295,7 +295,7 @@
     },
     {
         "Name": "Sarah Ruby Christina A",
-        "Designation": "Head – Digital Transformation & International Relations Manager",
+        "Designation": "Head \u2013 Digital Transformation & International Relations Manager",
         "pdf": "pdf profile/Sarah Ruby Christina A.pdf",
         "Department": "Principal Office"
     },
@@ -313,7 +313,7 @@
     },
     {
         "Name": "Mr.M.Athipathy",
-        "Designation": "Operations Manager – Principal Administrative",
+        "Designation": "Operations Manager \u2013 Principal Administrative",
         "pdf": "pdf profile/Mr.M.Athipathy.pdf",
         "Department": "Principal Office"
     },
@@ -322,395 +322,5 @@
         "Designation": "Assistant Professor",
         "pdf": "pdf profile/Mr.Aravind.T.pdf",
         "Department": "Principal Office"
-    },
-    {
-        "Name": "ABIGAIL J OLIVIA",
-        "Designation": "Personal Secretary",
-        "pdf": "pdf profile/ABIGAIL J OLIVIA.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ABINAYA S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/ABINAYA S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ABITHA P",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/ABITHA P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ADHAVAN A",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/ADHAVAN A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ANANTHI B",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/ANANTHI B.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ANANTHI P",
-        "Designation": "DEAN - CENTRE OF EXCELLENCE",
-        "pdf": "pdf profile/ANANTHI P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ANISA BANU AHMED BASHA SHAIKH",
-        "Designation": "Soft Skill Trainer",
-        "pdf": "pdf profile/ANISA BANU AHMED BASHA SHAIKH.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "ARUN THANGAIAH B",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/ARUN THANGAIAH B.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "AYISHA",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/AYISHA.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "BEULAH A",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/BEULAH A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "BHUVANESWARI M",
-        "Designation": "Assistant Professor ",
-        "pdf": "pdf profile/BHUVANESWARI M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "BOOPATHY ESWARAN",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/BOOPATHY ESWARAN.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "CHRISTINA ESTHER A",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/CHRISTINA ESTHER A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "DHARSHINI D.R",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/DHARSHINI D.R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "DINESH V T",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/DINESH V T.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "DR SANGEETHA P",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/DR SANGEETHA P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "GOKUL RAJ V",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/GOKUL RAJ V.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "GOWTHAM R",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/GOWTHAM R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "GOWTHAMI B",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/GOWTHAMI B.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "JENCY P",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/JENCY P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KANISHKA P",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/KANISHKA P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KARISHMA M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/KARISHMA M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KARTHIK E",
-        "Designation": "Teaching Assistant",
-        "pdf": "pdf profile/KARTHIK E.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KARTHIVEL P",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/KARTHIVEL P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KAVITHA",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/KAVITHA.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KAVIYA PRIYA P",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/KAVIYA PRIYA P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "KUMAR SHANU P K",
-        "Designation": "Soft Skill Trainer",
-        "pdf": "pdf profile/KUMAR SHANU P K.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "LAKSHMI MADHUSOODANAN",
-        "Designation": "Soft Skill Trainer",
-        "pdf": "pdf profile/LAKSHMI MADHUSOODANAN.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "LIJUSHA J",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/LIJUSHA J.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "MANJU P",
-        "Designation": "DEAN - RSMART INTELLECT ENGINEERING AND SCIENCE",
-        "pdf": "pdf profile/MANJU P.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "MANJU S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/MANJU S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "MOHAMMED IMRAN K S",
-        "Designation": "Placement Programming Trainer",
-        "pdf": "pdf profile/MOHAMMED IMRAN K S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "MONICA R",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/MONICA R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "MURALI KRISHNAN K",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/MURALI KRISHNAN K.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "NANDHU M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/NANDHU M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "NIRANJANA K S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/NIRANJANA K S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "NITHYAPRIYA S",
-        "Designation": "Student Success Officer",
-        "pdf": "pdf profile/NITHYAPRIYA S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "PARTHIBAN M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/PARTHIBAN M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "PETCHIAMMAL N",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/PETCHIAMMAL N.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "PRADEEPA S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/PRADEEPA S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "PRAVEENA K",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/PRAVEENA K.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "PRAVEENA S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/PRAVEENA S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RAJALAKSHMI M",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/RAJALAKSHMI M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RAMYA R",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/RAMYA R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RATHINAVEL PANDIAN D",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/RATHINAVEL PANDIAN D.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RESHMA A",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/RESHMA A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RICHARD R",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/RICHARD R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "RINSHA SHERIN E V",
-        "Designation": "Student Success Officer",
-        "pdf": "pdf profile/RINSHA SHERIN E V.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SAIDEEPIKA",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SAIDEEPIKA.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SWAMYNATHAN T",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/SAMYNATHAN T.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SATHIYA PRIYA M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SATHIYA PRIYA M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SETHURAMAN M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SETHURAMAN M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SHALINI K",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/SHALINI K.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SHANMUGA PRIYA A",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SHANMUGA PRIYA A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SHARMILA B",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/SHARMILA B.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SOMU NIVITHA SUJI M",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SOMU NIVITHA SUJI M.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SUBASINI S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SUBASINI S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SURIYA SANJAY S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/SURIYA SANJAY S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SWATHI B",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/SWATHI B.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "SWEETIKA R",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/SWEETIKA R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "THEERTHA M A",
-        "Designation": "Student Success Officer",
-        "pdf": "pdf profile/THEERTHA M A.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "VAISHNAVI S",
-        "Designation": "Assistant Professor",
-        "pdf": "pdf profile/VAISHNAVI S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "VASANTHA KRISHNAN S",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/VASANTHA KRISHNAN S.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "VIJAYA BHARATHI R",
-        "Designation": "Technical Trainer",
-        "pdf": "pdf profile/VIJAYA BHARATHI R.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
-    },
-    {
-        "Name": "YAFIYAH ZENATH Y",
-        "Designation": "Teaching Assistant",
-        "pdf": "pdf profile/YAFIYAH ZENATH Y.pdf",
-        "Department": "Center of Excellence | Raise Smart School of Technology"
     }
 ]
