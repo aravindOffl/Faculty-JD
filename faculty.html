@@ -253,14 +253,6 @@
                     "Reporting To (Name and Designation)"
                 ];
 
-                /* Work Hours Distribution */
-                const workHoursFields = [
-                    "Teaching Hours per week",
-                    "Hours for Preparation",
-                    "Hours for Additional Resposibilities",
-                    "Hours for Self Development"
-                ];
-
                 /* Teaching Responsibilities */
                 const teachingFields = [
                     "No.of Theory Papers handling",
@@ -287,6 +279,14 @@
                     "No.of Project Proposals submission in 26-27 (target)",
                     "No.of KPI submissions in 26-27 (target)",
                     "Exceptional Initiatives"
+                ];
+
+                /* Work Hours Distribution */
+                const workHoursFields = [
+                    "Teaching Hours per week",
+                    "Hours for Preparation",
+                    "Hours for Additional Resposibilities",
+                    "Hours for Self Development"
                 ];
 
                 // Generate initials for avatar
@@ -354,37 +354,6 @@
                     </div>
                 `;
 
-                /* Work Hours Distribution */
-                const hasWorkHours = workHoursFields.some(field => faculty[field] !== undefined);
-                if (hasWorkHours) {
-                    html += `
-                        <div class="profile-card">
-                            <div class="card-header">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <h3>Work Hours Distribution</h3>
-                            </div>
-                            <div class="card-body">
-                    `;
-                    workHoursFields.forEach(field => {
-                        if (faculty[field] !== undefined) {
-                            let val = faculty[field];
-                            if (val && !isNaN(val.toString().trim())) {
-                                val = `${val.toString().trim()} Hours`;
-                            }
-                            html += `
-                                <div class="info-group">
-                                    <label>${field}</label>
-                                    <div class="info-value">${val}</div>
-                                </div>
-                            `;
-                        }
-                    });
-                    html += `
-                            </div>
-                        </div>
-                    `;
-                }
-
                 /* Tutor Responsibilities */
                 html += `
                     <div class="profile-card">
@@ -415,6 +384,38 @@
                                 </ul>
                             </div>
                         `;
+                html += `
+                        </div>
+                    </div>
+                `;
+
+                /* Work Hours Distribution */
+                html += `
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <h3>Work Hours Distribution</h3>
+                        </div>
+                        <div class="card-body">
+                `;
+                workHoursFields.forEach(field => {
+                    if (faculty[field] !== undefined) {
+                        let displayLabel = field;
+                        if (field === "Hours for Additional Resposibilities") {
+                            displayLabel = "Hours for Additional Responsibilities";
+                        }
+                        let displayValue = faculty[field];
+                        if (displayValue !== "" && !isNaN(displayValue)) {
+                            displayValue += " hours";
+                        }
+                        html += `
+                            <div class="info-group">
+                                <label>${displayLabel}</label>
+                                <div class="info-value">${displayValue}</div>
+                            </div>
+                        `;
+                    }
+                });
                 html += `
                         </div>
                     </div>
