@@ -161,7 +161,7 @@
             background: #ffffff;
             outline: none;
             transition: all 0.2s ease;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.01);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
         }
 
         .search-wrapper input:focus {
@@ -188,7 +188,7 @@
             appearance: none;
             -webkit-appearance: none;
             transition: all 0.2s ease;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.01);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
         }
 
         .sort-wrapper select:focus {
@@ -245,7 +245,7 @@
             align-items: center;
             justify-content: center;
             min-height: 48px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
         }
 
         .dept-btn:hover {
@@ -274,6 +274,7 @@
                 opacity: 0;
                 transform: translateY(12px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -523,7 +524,11 @@
     <div class="header">
         <div class="header-logo">
             <div class="logo-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                </svg>
             </div>
             <h1>Job Directory</h1>
         </div>
@@ -533,7 +538,12 @@
                 <span class="username-display">User: <strong id="displayUsername"></strong></span>
             </div>
             <button class="logout-btn" id="logoutBtn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
                 Logout
             </button>
         </div>
@@ -542,7 +552,11 @@
     <div class="toolbar">
         <div class="search-wrapper">
             <div class="search-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
             </div>
             <input type="text" id="searchBox" placeholder="Search faculty by name..." autocomplete="off">
             <div id="searchSuggestions" class="search-suggestions-dropdown"></div>
@@ -554,17 +568,38 @@
                 <option value="desc">Descending (Z-A)</option>
             </select>
             <div class="select-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
             </div>
         </div>
     </div>
 
     <div class="dept-container">
         <div class="dept-title">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="9"></rect>
+                <rect x="14" y="3" width="7" height="5"></rect>
+                <rect x="14" y="12" width="7" height="9"></rect>
+                <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
             Filter by Department
         </div>
         <div id="departmentButtons" class="dept-buttons-grid"></div>
+    </div>
+
+    <div class="dept-container" style="margin-top: 20px;">
+        <div class="dept-title">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+            </svg>
+            Leadership Team
+        </div>
+        <div id="schoolButtons" class="dept-buttons-grid"></div>
     </div>
 
     <div id="facultyList">Loading...</div>
@@ -612,6 +647,7 @@
 
         let allFaculty = [];
         let activeDepartment = "";
+        let activeSchool = "";
 
         function createFacultyCard(faculty, idx) {
             const card = document.createElement("div");
@@ -675,6 +711,14 @@
                 });
             }
 
+            /* School/Category Filter */
+            const selectedSchool = activeSchool;
+            if (selectedSchool !== "") {
+                filteredFaculty = filteredFaculty.filter(faculty => {
+                    return faculty.Category === selectedSchool;
+                });
+            }
+
             /* Sorting */
             filteredFaculty.sort((a, b) => {
 
@@ -710,34 +754,37 @@
             fetch("faculty.json").then(res => res.json()),
             fetch("pdf_faculty.json").then(res => res.json()),
             fetch("COE.json").then(res => res.json()),
-            fetch("training.json").then(res => res.json())
+            fetch("training.json").then(res => res.json()),
+            fetch("dean.json").then(res => res.json())
         ])
-            .then(([facultyData, pdfFacultyData, coeFacultyData, trainingFacultyData]) => {
+            .then(([facultyData, pdfFacultyData, coeFacultyData, trainingFacultyData, deanFacultyData]) => {
 
                 allFaculty = [];
                 const departmentsSet = new Set();
 
                 /* Normal Faculty Profiles */
                 facultyData.forEach((faculty, index) => {
-                    const mainDept = faculty.Department.split(' (')[0];
+                    const mainDept = faculty.Department.trim().split(' (')[0];
                     // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
                     // For S&H, we'll handle it specially in the dropdown
                     if (mainDept === "S&H") {
                         departmentsSet.add("S&H");
                     } else {
-                        departmentsSet.add(faculty.Department);
+                        departmentsSet.add(faculty.Department.trim());
                     }
 
                     allFaculty.push({
                         DisplayName: faculty["Name of the faculty"] || faculty.Name,
                         Name: faculty.Name,
                         Designation: faculty.Designation,
-                        Department: faculty.Department,
+                        Department: faculty.Department.trim(),
                         MainDepartment: mainDept,
+                        Category: "Faculty",
                         isPdf: false,
                         clickHandler: () => {
-                            // Save selected department before navigating
+                            // Save selected department/school before navigating
                             sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            sessionStorage.setItem('selectedSchool', activeSchool);
                             window.location.href = `faculty.html?id=${index}`;
                         }
                     });
@@ -745,21 +792,22 @@
 
                 /* PDF Faculty Profiles */
                 pdfFacultyData.forEach((faculty) => {
-                    const mainDept = faculty.Department.split(' (')[0];
+                    const mainDept = faculty.Department.trim().split(' (')[0];
                     // Add full department to set (for CSE variants: CSE, CSE (CY), CSE (AI&ML))
                     // For S&H, we'll handle it specially in the dropdown
                     if (mainDept === "S&H") {
                         departmentsSet.add("S&H");
                     } else {
-                        departmentsSet.add(faculty.Department);
+                        departmentsSet.add(faculty.Department.trim());
                     }
 
                     allFaculty.push({
                         DisplayName: faculty["Name of the faculty"] || faculty.Name,
                         Name: faculty.Name,
                         Designation: faculty.Designation,
-                        Department: faculty.Department,
+                        Department: faculty.Department.trim(),
                         MainDepartment: mainDept,
+                        Category: faculty.Department.trim() === "Principal" ? "Principal" : "Faculty",
                         isPdf: true,
                         clickHandler: () => {
                             window.open(faculty.pdf, "_blank");
@@ -778,10 +826,12 @@
                         Designation: faculty.DESIGNATION,
                         Department: deptName,
                         MainDepartment: deptName,
+                        Category: "Faculty",
                         isPdf: false,
                         clickHandler: () => {
-                            // Save selected department before navigating
+                            // Save selected department/school before navigating
                             sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            sessionStorage.setItem('selectedSchool', activeSchool);
                             window.location.href = `faculty.html?id=${index}&type=coe`;
                         }
                     });
@@ -798,18 +848,39 @@
                         Designation: faculty.DESIGNATION,
                         Department: deptName,
                         MainDepartment: deptName,
+                        Category: "Faculty",
                         isPdf: false,
                         clickHandler: () => {
-                            // Save selected department before navigating
+                            // Save selected department/school before navigating
                             sessionStorage.setItem('selectedDepartment', activeDepartment);
+                            sessionStorage.setItem('selectedSchool', activeSchool);
                             window.location.href = `faculty.html?id=${index}&type=training`;
+                        }
+                    });
+                });
+
+                /* Dean / Director Faculty Profiles */
+                deanFacultyData.forEach((faculty) => {
+                    // Do not add deans/directors' departments to departmentsSet to keep department buttons filter clean
+                    allFaculty.push({
+                        DisplayName: faculty.Name,
+                        Name: faculty.Name,
+                        Designation: faculty.Designation,
+                        Department: faculty.Department,
+                        MainDepartment: faculty.Department,
+                        Category: "Director/Dean of Schools",
+                        isPdf: true,
+                        clickHandler: () => {
+                            window.open(faculty.pdf, "_blank");
                         }
                     });
                 });
 
                 // Populate department buttons
                 const departmentButtonsContainer = document.getElementById("departmentButtons");
-                const uniqueDepts = Array.from(departmentsSet).sort();
+                const uniqueDepts = Array.from(departmentsSet)
+                    .filter(dept => dept !== "Principal")
+                    .sort();
 
                 function updateDepartmentButtons() {
                     departmentButtonsContainer.innerHTML = "";
@@ -817,7 +888,7 @@
                     // "All Departments" button
                     const allBtn = document.createElement("button");
                     allBtn.type = "button";
-                    allBtn.className = "dept-btn" + (activeDepartment === "" ? " active" : "");
+                    allBtn.className = "dept-btn" + (activeDepartment === "" && activeSchool === "" ? " active" : "");
                     allBtn.textContent = "All Departments";
                     allBtn.addEventListener("click", () => {
                         setActiveDepartment("");
@@ -836,14 +907,40 @@
                     });
                 }
 
-                // Restore selected department from sessionStorage
+                // Populate school buttons
+                const schoolButtonsContainer = document.getElementById("schoolButtons");
+                const schoolCategories = ["Principal", "Director/Dean of Schools"];
+
+                function updateSchoolButtons() {
+                    schoolButtonsContainer.innerHTML = "";
+
+                    schoolCategories.forEach(cat => {
+                        const btn = document.createElement("button");
+                        btn.type = "button";
+                        btn.className = "dept-btn" + (activeSchool === cat ? " active" : "");
+                        btn.textContent = cat;
+                        btn.addEventListener("click", () => {
+                            setActiveSchool(cat);
+                        });
+                        schoolButtonsContainer.appendChild(btn);
+                    });
+                }
+
+                // Restore selected filters from sessionStorage
                 const savedDepartment = sessionStorage.getItem('selectedDepartment');
+                const savedSchool = sessionStorage.getItem('selectedSchool');
                 if (savedDepartment) {
                     activeDepartment = savedDepartment;
+                    activeSchool = "";
                     sessionStorage.removeItem('selectedDepartment');
+                } else if (savedSchool) {
+                    activeSchool = savedSchool;
+                    activeDepartment = "";
+                    sessionStorage.removeItem('selectedSchool');
                 }
 
                 updateDepartmentButtons();
+                updateSchoolButtons();
 
                 renderFacultyList();
 
@@ -865,29 +962,57 @@
 
         function setActiveDepartment(dept) {
             activeDepartment = dept;
+            activeSchool = ""; // Clear school filter
             sessionStorage.setItem('lastSelectedDepartment', dept);
+            sessionStorage.removeItem('lastSelectedSchool');
 
-            // Update active styling
-            const buttons = document.querySelectorAll(".dept-btn");
-            buttons.forEach(btn => {
-                const isAllBtn = btn.textContent === "All Departments";
-                if ((isAllBtn && dept === "") || (!isAllBtn && btn.textContent === dept)) {
-                    btn.classList.add("active");
-                } else {
-                    btn.classList.remove("active");
-                }
-            });
-
+            updateButtonStyles();
             renderFacultyList();
 
             // Smooth scroll to faculty list
             facultyList.scrollIntoView({ behavior: "smooth", block: "start" });
         }
 
+        function setActiveSchool(school) {
+            activeSchool = school;
+            activeDepartment = ""; // Clear department filter
+            sessionStorage.setItem('lastSelectedSchool', school);
+            sessionStorage.removeItem('lastSelectedDepartment');
+
+            updateButtonStyles();
+            renderFacultyList();
+
+            // Smooth scroll to faculty list
+            facultyList.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        function updateButtonStyles() {
+            // Update department buttons
+            const deptButtons = document.querySelectorAll("#departmentButtons .dept-btn");
+            deptButtons.forEach(btn => {
+                const isAllBtn = btn.textContent === "All Departments";
+                if ((isAllBtn && activeDepartment === "" && activeSchool === "") || (!isAllBtn && btn.textContent === activeDepartment)) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+
+            // Update school buttons
+            const schoolButtons = document.querySelectorAll("#schoolButtons .dept-btn");
+            schoolButtons.forEach(btn => {
+                if (btn.textContent === activeSchool) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+        }
+
         // ===== SEARCH AUTOCOMPLETE SUGGESTIONS =====
         const searchSuggestions = document.getElementById("searchSuggestions");
 
-        searchBox.addEventListener("input", function() {
+        searchBox.addEventListener("input", function () {
             const query = this.value.trim().toLowerCase();
             if (query === "") {
                 searchSuggestions.innerHTML = "";
@@ -896,7 +1021,7 @@
             }
 
             // Filter all faculty by name
-            const matches = allFaculty.filter(faculty => 
+            const matches = allFaculty.filter(faculty =>
                 faculty.DisplayName.toLowerCase().includes(query)
             ).slice(0, 8); // limit suggestions for clean view
 
@@ -914,22 +1039,31 @@
                     <span class="suggestion-name">${faculty.DisplayName}</span>
                     <span class="suggestion-dept">${faculty.Department}</span>
                 `;
-                item.addEventListener("click", function() {
+                item.addEventListener("click", function () {
                     // Update search box
                     searchBox.value = faculty.DisplayName;
                     searchSuggestions.style.display = "none";
                     searchSuggestions.innerHTML = "";
 
-                    // Reset department filter if matching faculty is not in the active department
+                    // Reset filters if matching faculty is not in the active department or school
+                    let needsReset = false;
                     if (activeDepartment !== "" && faculty.Department !== activeDepartment && !(activeDepartment === "S&H" && faculty.Department.startsWith("S&H"))) {
-                        setActiveDepartment("");
-                    } else {
-                        renderFacultyList();
+                        needsReset = true;
                     }
+                    if (activeSchool !== "" && faculty.Category !== activeSchool) {
+                        needsReset = true;
+                    }
+
+                    if (needsReset) {
+                        activeDepartment = "";
+                        activeSchool = "";
+                        updateButtonStyles();
+                    }
+                    renderFacultyList();
 
                     // Find and scroll to the card
                     setTimeout(() => {
-                        const targetCard = Array.from(document.querySelectorAll(".faculty-card")).find(card => 
+                        const targetCard = Array.from(document.querySelectorAll(".faculty-card")).find(card =>
                             card.querySelector("h3").textContent === faculty.DisplayName
                         );
                         if (targetCard) {
@@ -951,14 +1085,14 @@
         });
 
         // Hide suggestions when clicking outside
-        document.addEventListener("click", function(e) {
+        document.addEventListener("click", function (e) {
             if (!searchBox.contains(e.target) && !searchSuggestions.contains(e.target)) {
                 searchSuggestions.style.display = "none";
             }
         });
 
         // Re-show suggestions on focus if there's text
-        searchBox.addEventListener("focus", function() {
+        searchBox.addEventListener("focus", function () {
             if (this.value.trim() !== "") {
                 searchSuggestions.style.display = "block";
             }

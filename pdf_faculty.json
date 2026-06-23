@@ -217,9 +217,9 @@
     },
     {
         "Name": "Dr.K.Geetha",
-        "Designation": "Principal \u2013 Administration",
+        "Designation": "Principal",
         "pdf": "pdf profile/Dr.K.Geetha.pdf",
-        "Department": "Principal Office"
+        "Department": "Principal"
     },
     {
         "Name": "Ram Kumar S",
@@ -256,5 +256,23 @@
         "Designation": "Assistant Professor",
         "pdf": "pdf profile/Mr.Aravind.T.pdf",
         "Department": "Principal Office"
+    },
+    {
+        "Name": "Jeevakarunya C",
+        "Designation": "Assistant Professor",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "CSE"
+    },
+    {
+        "Name": "Dr.Dhurgadevi M",
+        "Designation": "Professor",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "AI&DS"
+    },
+    {
+        "Name": "Dr.Poongodi K",
+        "Designation": "Professor",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "CSE (AI&ML)"
     }
 ]

@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "Dr. Seenivasan S",
+    "Designation": "Dean",
+    "pdf": "pdf profile/Heads and Deans/SOMS.pdf",
+    "Department": "School of Mechanical Sciences",
+    "Category": "Director/Dean of Schools"
+  },
+  {
+    "Name": "Dr.M.FATHU NISHA",
+    "Designation": "Dean",
+    "pdf": "pdf profile/Heads and Deans/SOES.pdf",
+    "Department": "School of Electrical Sciences",
+    "Category": "Director/Dean of Schools"
+  },
+  {
+    "Name": "Dr. Rajavel A",
+    "Designation": "Associate Dean",
+    "pdf": "pdf profile/Heads and Deans/SOC.pdf",
+    "Department": "School of Computing",
+    "Category": "Director/Dean of Schools"
+  },
+  {
+    "Name": "Dr.Satish Kumar P",
+    "Designation": "Associate Dean",
+    "pdf": "pdf profile/Heads and Deans/S&H.pdf",
+    "Department": "School of Science and Humanities",
+    "Category": "Director/Dean of Schools"
+  },
+  {
+    "Name": "Dr.K.Anuratha",
+    "Designation": "Director",
+    "pdf": "pdf profile/Heads and Deans/MCA.pdf",
+    "Department": "MCA",
+    "Category": "Director/Dean of Schools"
+  }
+]

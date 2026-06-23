@@ -1,0 +1,86 @@
+[
+  {
+    "Name": "Vijayasekaran.G",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "MECH",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Karthick L S",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "ECE",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Jeevakarunya C",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "AI&DS",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Karthika R",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "IT",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Dr.Dhurgadevi M",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "AIDS",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Dr.Poongodi K",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "CSE (AI&ML)",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Dr.Amutha M",
+    "Designation": "Head of the Department",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "CSE (CY)",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Dr.P.M.Shiyana",
+    "Designation": "HoD (i/c)",
+    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+    "Department": "MBA",
+    "Category": "Heads"
+  },
+  {
+    "Name": "Dr. Seenivasan S",
+    "Designation": "Dean",
+    "pdf": "pdf profile/Heads and Deans/SOMS.pdf",
+    "Department": "School of Mechanical Sciences",
+    "Category": "Deans & Director"
+  },
+  {
+    "Name": "Dr.M.FATHU NISHA",
+    "Designation": "Dean",
+    "pdf": "pdf profile/Heads and Deans/SOES.pdf",
+    "Department": "School of Electrical Sciences",
+    "Category": "Deans & Director"
+  },
+  {
+    "Name": "Dr. Rajavel A",
+    "Designation": "Associate Dean",
+    "pdf": "pdf profile/Heads and Deans/SOC.pdf",
+    "Department": "School of Computing",
+    "Category": "Deans & Director"
+  },
+  {
+    "Name": "Dr.Satish Kumar P",
+    "Designation": "Dean",
+    "pdf": "pdf profile/temp.pdf",
+    "Department": "Science & Humanities",
+    "Category": "Deans & Director"
+  }
+]
