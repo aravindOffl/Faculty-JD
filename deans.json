@@ -1,86 +1,86 @@
 [
-  {
-    "Name": "Vijayasekaran.G",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "MECH",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Karthick L S",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "ECE",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Jeevakarunya C",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "AI&DS",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Karthika R",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "IT",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Dr.Dhurgadevi M",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "AIDS",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Dr.Poongodi K",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "CSE (AI&ML)",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Dr.Amutha M",
-    "Designation": "Head of the Department",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "CSE (CY)",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Dr.P.M.Shiyana",
-    "Designation": "HoD (i/c)",
-    "pdf": "pdf profile/Heads and Deans/Heads.pdf",
-    "Department": "MBA",
-    "Category": "Heads"
-  },
-  {
-    "Name": "Dr. Seenivasan S",
-    "Designation": "Dean",
-    "pdf": "pdf profile/Heads and Deans/SOMS.pdf",
-    "Department": "School of Mechanical Sciences",
-    "Category": "Deans & Director"
-  },
-  {
-    "Name": "Dr.M.FATHU NISHA",
-    "Designation": "Dean",
-    "pdf": "pdf profile/Heads and Deans/SOES.pdf",
-    "Department": "School of Electrical Sciences",
-    "Category": "Deans & Director"
-  },
-  {
-    "Name": "Dr. Rajavel A",
-    "Designation": "Associate Dean",
-    "pdf": "pdf profile/Heads and Deans/SOC.pdf",
-    "Department": "School of Computing",
-    "Category": "Deans & Director"
-  },
-  {
-    "Name": "Dr.Satish Kumar P",
-    "Designation": "Dean",
-    "pdf": "pdf profile/temp.pdf",
-    "Department": "Science & Humanities",
-    "Category": "Deans & Director"
-  }
+    {
+        "Name": "VIJAYASEKARAN.G",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "MECH",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "KARTHICK L S",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "ECE",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "JEEVAKARUNYA C",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "AI&DS",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "KARTHIKA R",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "IT",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "DR.DHURGADEVI M",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "AIDS",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "DR.POONGODI K",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "CSE (AI&ML)",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "DR.AMUTHA M",
+        "Designation": "HEAD OF THE DEPARTMENT",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "CSE (CY)",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "DR.P.M.SHIYANA",
+        "Designation": "HOD (I/C)",
+        "pdf": "pdf profile/Heads and Deans/Heads.pdf",
+        "Department": "MBA",
+        "Category": "HEADS"
+    },
+    {
+        "Name": "DR. SEENIVASAN S",
+        "Designation": "DEAN",
+        "pdf": "pdf profile/Heads and Deans/SOMS.pdf",
+        "Department": "SCHOOL OF MECHANICAL SCIENCES",
+        "Category": "DEANS & DIRECTOR"
+    },
+    {
+        "Name": "DR.M.FATHU NISHA",
+        "Designation": "DEAN",
+        "pdf": "pdf profile/Heads and Deans/SOES.pdf",
+        "Department": "SCHOOL OF ELECTRICAL SCIENCES",
+        "Category": "DEANS & DIRECTOR"
+    },
+    {
+        "Name": "DR. RAJAVEL A",
+        "Designation": "ASSOCIATE DEAN",
+        "pdf": "pdf profile/Heads and Deans/SOC.pdf",
+        "Department": "SCHOOL OF COMPUTING",
+        "Category": "DEANS & DIRECTOR"
+    },
+    {
+        "Name": "DR.SATISH KUMAR P",
+        "Designation": "DEAN",
+        "pdf": "pdf profile/temp.pdf",
+        "Department": "SCIENCE & HUMANITIES",
+        "Category": "DEANS & DIRECTOR"
+    }
 ]
