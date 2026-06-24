@@ -617,9 +617,18 @@
                     html += generateWorkHoursCard(totalHours, items);
 
                     html += "</div>";
-                    document.getElementById('details').innerHTML = html;
-                    return;
                 }
+
+                const getFacultyValue = (fac, field) => {
+                    if (fac[field] !== undefined) return fac[field];
+                    const normField = field.toLowerCase().replace(/[^a-z0-9]/g, '');
+                    for (let key in fac) {
+                        if (key.toLowerCase().replace(/[^a-z0-9]/g, '') === normField) {
+                            return fac[key];
+                        }
+                    }
+                    return undefined;
+                };
 
                 /* Faculty Information */
                 const facultyInfoFields = [
@@ -743,11 +752,14 @@
                         <div class="card-body">
                 `;
                 facultyInfoFields.forEach(field => {
-                    if (faculty[field] !== undefined) {
+                    const value = getFacultyValue(faculty, field);
+                    if (value !== undefined) {
+                        let displayLabel = field.replace(/\r\n/g, ' ').replace(/\n/g, ' ').trim();
+                        displayLabel = displayLabel.replace(/\s*Eg:.*$/i, '').trim();
                         html += `
                             <div class="info-group">
-                                <label>${field}</label>
-                                <div class="info-value">${faculty[field]}</div>
+                                <label>${displayLabel}</label>
+                                <div class="info-value">${value}</div>
                             </div>
                         `;
                     }
@@ -767,11 +779,12 @@
                         <div class="card-body">
                 `;
                 teachingFields.forEach(field => {
-                    if (faculty[field] !== undefined) {
+                    const value = getFacultyValue(faculty, field);
+                    if (value !== undefined) {
                         html += `
                             <div class="info-group">
                                 <label>${field.trim()}</label>
-                                <div class="info-value">${faculty[field]}</div>
+                                <div class="info-value">${value}</div>
                             </div>
                         `;
                     }
@@ -791,11 +804,12 @@
                         <div class="card-body">
                 `;
                 responsibilityFields.forEach(field => {
-                    if (faculty[field] !== undefined) {
+                    const value = getFacultyValue(faculty, field);
+                    if (value !== undefined) {
                         html += `
                             <div class="info-group">
                                 <label>${field}</label>
-                                <div class="info-value">${faculty[field]}</div>
+                                <div class="info-value">${value}</div>
                             </div>
                         `;
                     }
@@ -845,8 +859,9 @@
                         <div class="card-body">
                 `;
                 adminFields.forEach(field => {
-                    if (faculty[field] !== undefined) {
-                        const valueFormatted = faculty[field] ? faculty[field].replace(/\r\n/g, '<br>') : '';
+                    const value = getFacultyValue(faculty, field);
+                    if (value !== undefined) {
+                        const valueFormatted = value ? value.replace(/\r\n/g, '<br>') : '';
                         html += `
                             <div class="info-group full-width">
                                 <label>${field.replace(/\r\n/g, ' ')}</label>
@@ -870,12 +885,13 @@
                         <div class="card-body">
                 `;
                 selfDevelopmentFields.forEach(field => {
-                    if (faculty[field] !== undefined) {
+                    const value = getFacultyValue(faculty, field);
+                    if (value !== undefined) {
                         const isFullWidth = field === "Exceptional Initiatives";
                         html += `
                             <div class="info-group ${isFullWidth ? 'full-width' : ''}">
                                 <label>${field}</label>
-                                <div class="info-value">${faculty[field]}</div>
+                                <div class="info-value">${value}</div>
                             </div>
                         `;
                     }
