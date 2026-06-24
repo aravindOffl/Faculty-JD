@@ -807,7 +807,7 @@
                         Designation: faculty.Designation,
                         Department: faculty.Department.trim(),
                         MainDepartment: mainDept,
-                        Category: faculty.Department.trim() === "Principal" ? "Principal" : "Faculty",
+                        Category: faculty.Department.trim().toLowerCase() === "principal" ? "Principal" : "Faculty",
                         isPdf: true,
                         clickHandler: () => {
                             window.open(faculty.pdf, "_blank");
@@ -879,7 +879,7 @@
                 // Populate department buttons
                 const departmentButtonsContainer = document.getElementById("departmentButtons");
                 const uniqueDepts = Array.from(departmentsSet)
-                    .filter(dept => dept !== "Principal")
+                    .filter(dept => dept.toLowerCase() !== "principal")
                     .sort();
 
                 function updateDepartmentButtons() {
