@@ -378,7 +378,7 @@
         const isTraining = type === 'training';
 
         let dataUrl = 'faculty.json';
-        if (isCoe) dataUrl = 'COE.json';
+        if (isCoe) dataUrl = 'coe.json';
         if (isTraining) dataUrl = 'training.json';
 
         fetch(dataUrl)
@@ -521,7 +521,7 @@
                                 <div class="profile-avatar">${initials}</div>
                                 <div class="profile-title-area">
                                     <h1>${faculty["FULL NAME"]}</h1>
-                                    <p>${faculty["DESIGNATION"] || "Faculty Member"} &bull; Center of Excellence | Raise Smart School of Technology</p>
+                                    <p>${faculty["DESIGNATION"] || "Faculty Member"} &bull; CENTER OF EXCELLENCE | RAISE SMART SCHOOL OF TECHNOLOGY</p>
                                 </div>
                             </div>
                         </div>
@@ -617,6 +617,8 @@
                     html += generateWorkHoursCard(totalHours, items);
 
                     html += "</div>";
+                    document.getElementById('details').innerHTML = html;
+                    return;
                 }
 
                 const getFacultyValue = (fac, field) => {

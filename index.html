@@ -753,7 +753,7 @@
         Promise.all([
             fetch("faculty.json").then(res => res.json()),
             fetch("pdf_faculty.json").then(res => res.json()),
-            fetch("COE.json").then(res => res.json()),
+            fetch("coe.json").then(res => res.json()),
             fetch("training.json").then(res => res.json()),
             fetch("dean.json").then(res => res.json())
         ])
@@ -817,7 +817,7 @@
 
                 /* COE Faculty Profiles */
                 coeFacultyData.forEach((faculty, index) => {
-                    const deptName = "Center of Excellence | Raise Smart School of Technology";
+                    const deptName = "CENTER OF EXCELLENCE | RAISE SMART SCHOOL OF TECHNOLOGY";
                     departmentsSet.add(deptName);
 
                     allFaculty.push({
